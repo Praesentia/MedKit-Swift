@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "14593DDDC1620937798061DBBC24A1276CF345A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CF1765AF6BE202946887B0C09AA130B3ECF65516" : 9223372036854775807,
+    "14593DDDC1620937798061DBBC24A1276CF345A1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "031C5C08-2C03-4CD7-A5E6-50E35AD345B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CF1765AF6BE202946887B0C09AA130B3ECF65516" : "MedKitCore\/",
+    "14593DDDC1620937798061DBBC24A1276CF345A1" : "MedKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MedKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MedKit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/server.local\/Volumes\/Data\/Repositories\/MedKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14593DDDC1620937798061DBBC24A1276CF345A1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/server.local\/Volumes\/Data\/Repositories\/MedKitCore",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CF1765AF6BE202946887B0C09AA130B3ECF65516"
+    }
+  ]
+}

@@ -1,0 +1,1250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220445561D84D3BB001934CD /* MedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204454C1D84D3BB001934CD /* MedKit.framework */; };
+		2204455B1D84D3BB001934CD /* MedKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2204455A1D84D3BB001934CD /* MedKitTests.swift */; };
+		2204455D1D84D3BB001934CD /* MedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204454F1D84D3BB001934CD /* MedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220A343B1EBE176E0024DF9E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 220A343A1EBE176E0024DF9E /* LICENSE.txt */; };
+		220A34451EBF42950024DF9E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 220A34441EBF42950024DF9E /* README.md */; };
+		220A346B1EBF46740024DF9E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 220A34441EBF42950024DF9E /* README.md */; };
+		220A34781EBF46770024DF9E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 220A343A1EBE176E0024DF9E /* LICENSE.txt */; };
+		220A34791EBF467A0024DF9E /* Release Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 225A46911EB37E8D004EE389 /* Release Notes.rtf */; };
+		2239711C1E2E5511000B6B65 /* MedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223971131E2E5511000B6B65 /* MedKit.framework */; };
+		223971211E2E5511000B6B65 /* MedKit_MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223971201E2E5511000B6B65 /* MedKit_MacOSTests.swift */; };
+		223971231E2E5511000B6B65 /* MedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 223971151E2E5511000B6B65 /* MedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2243DE821E87F7E000A188FD /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243DE811E87F7E000A188FD /* Typealias.swift */; };
+		2243DE8E1E87F98600A188FD /* MedKitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243DE7A1E87F7CC00A188FD /* MedKitCore.framework */; };
+		2243DE8F1E87F98D00A188FD /* MedKitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243DE7E1E87F7CC00A188FD /* MedKitCore.framework */; };
+		2243DE9B1E87FB0200A188FD /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243DE811E87F7E000A188FD /* Typealias.swift */; };
+		225A46921EB37E8D004EE389 /* Release Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 225A46911EB37E8D004EE389 /* Release Notes.rtf */; };
+		22B143991E893980005A35B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B143981E893980005A35B9 /* Main.swift */; };
+		22B1439E1E893A75005A35B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B143981E893980005A35B9 /* Main.swift */; };
+		22B143AE1E893AAA005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143A71E893A89005A35B9 /* MedKitMIP.framework */; };
+		22B143AF1E893AAF005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143AB1E893A89005A35B9 /* MedKitMIP.framework */; };
+		22B1442E1E893DDC005A35B9 /* MedKitSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1441F1E893DD1005A35B9 /* MedKitSecurity.framework */; };
+		22B1442F1E893DE1005A35B9 /* MedKitSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B144231E893DD1005A35B9 /* MedKitSecurity.framework */; };
+		22B144B51E894B89005A35B9 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B144271E893DD1005A35B9 /* CommonCrypto.framework */; };
+		22B144B61E894B8D005A35B9 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1442B1E893DD1005A35B9 /* CommonCrypto.framework */; };
+		22CA1E3C1E8818510091CB87 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E3B1E8818510091CB87 /* ServiceType.swift */; };
+		22CA1E3F1E8818540091CB87 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E3B1E8818510091CB87 /* ServiceType.swift */; };
+		22CA1E411E88198A0091CB87 /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E401E88198A0091CB87 /* UnitType.swift */; };
+		22CA1E421E8819950091CB87 /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E401E88198A0091CB87 /* UnitType.swift */; };
+		22CA1E441E8819E20091CB87 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E431E8819E20091CB87 /* ResourceType.swift */; };
+		22CA1E451E8819E50091CB87 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E431E8819E20091CB87 /* ResourceType.swift */; };
+		22CA1E471E881ADF0091CB87 /* SchemaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E461E881ADF0091CB87 /* SchemaType.swift */; };
+		22CA1E481E881B910091CB87 /* SchemaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA1E461E881ADF0091CB87 /* SchemaType.swift */; };
+		22CA1EF61E88320B0091CB87 /* MedKitDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */; };
+		22CA1EF71E8832110091CB87 /* MedKitDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CA1EF31E8832020091CB87 /* MedKitDomain.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220445571D84D3BB001934CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220445431D84D3BB001934CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2204454B1D84D3BB001934CD;
+			remoteInfo = MedKit;
+		};
+		2239711D1E2E5511000B6B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220445431D84D3BB001934CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223971121E2E5511000B6B65;
+			remoteInfo = "MedKit MacOS";
+		};
+		2243DE791E87F7CC00A188FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2243DC791E872BDB00A188FD;
+			remoteInfo = "MedKitCore iOS";
+		};
+		2243DE7B1E87F7CC00A188FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2243DC811E872BDB00A188FD;
+			remoteInfo = "MedKitCore iOSTests";
+		};
+		2243DE7D1E87F7CC00A188FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2243DC951E872BF100A188FD;
+			remoteInfo = "MedKitCore macOS";
+		};
+		2243DE7F1E87F7CC00A188FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2243DC9D1E872BF100A188FD;
+			remoteInfo = "MedKitCore macOSTests";
+		};
+		2243DE851E87F8F000A188FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2243DC941E872BF100A188FD;
+			remoteInfo = "MedKitCore macOS";
+		};
+		2243DE8B1E87F8F400A188FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2243DC781E872BDB00A188FD;
+			remoteInfo = "MedKitCore iOS";
+		};
+		22B143A61E893A89005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1F9A1E883B490091CB87;
+			remoteInfo = "MedKitMIP iOS";
+		};
+		22B143A81E893A89005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1FA21E883B490091CB87;
+			remoteInfo = "MedKitMIP iOSTests";
+		};
+		22B143AA1E893A89005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1FB61E883B5B0091CB87;
+			remoteInfo = "MedKitMIP macOS";
+		};
+		22B143AC1E893A89005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1FBE1E883B5B0091CB87;
+			remoteInfo = "MedKitMIP macOSTests";
+		};
+		22B143B01E893AF3005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CA1FB51E883B5B0091CB87;
+			remoteInfo = "MedKitMIP macOS";
+		};
+		22B143B21E893AFC005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CA1F991E883B490091CB87;
+			remoteInfo = "MedKitMIP iOS";
+		};
+		22B1441E1E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2211563C1E2E73C800B5D239;
+			remoteInfo = "MedKitSecurity iOS";
+		};
+		22B144201E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156441E2E73C800B5D239;
+			remoteInfo = "MedKitSecurity iOSTests";
+		};
+		22B144221E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156581E2E73E200B5D239;
+			remoteInfo = "MedKitSecurity macOS";
+		};
+		22B144241E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156601E2E73E300B5D239;
+			remoteInfo = "MedKitSecurity macOSTests";
+		};
+		22B144261E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2211567B1E2E758E00B5D239;
+			remoteInfo = "CommonCrypto iOS";
+		};
+		22B144281E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156831E2E758E00B5D239;
+			remoteInfo = "CommonCrypto iOSTests";
+		};
+		22B1442A1E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221157A91E2E85AF00B5D239;
+			remoteInfo = "CommonCrypto macOS";
+		};
+		22B1442C1E893DD1005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221157B11E2E85AF00B5D239;
+			remoteInfo = "CommonCrypto macOSTests";
+		};
+		22B144301E893DEA005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 221156571E2E73E200B5D239;
+			remoteInfo = "MedKitSecurity macOS";
+		};
+		22B144321E893DEF005A35B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2211563B1E2E73C800B5D239;
+			remoteInfo = "MedKitSecurity iOS";
+		};
+		22CA1EEE1E8832020091CB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1E741E882B030091CB87;
+			remoteInfo = "MedKitDomain iOS";
+		};
+		22CA1EF01E8832020091CB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1E7C1E882B030091CB87;
+			remoteInfo = "MedKitDomain iOSTests";
+		};
+		22CA1EF21E8832020091CB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1E901E882B1A0091CB87;
+			remoteInfo = "MedKitDomain macOS";
+		};
+		22CA1EF41E8832020091CB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22CA1E981E882B1A0091CB87;
+			remoteInfo = "MedKitDomain macOSTests";
+		};
+		22CA1EF81E88322C0091CB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CA1E8F1E882B1A0091CB87;
+			remoteInfo = "MedKitDomain macOS";
+		};
+		22CA1EFA1E8832310091CB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CA1E731E882B030091CB87;
+			remoteInfo = "MedKitDomain iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2204454C1D84D3BB001934CD /* MedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2204454F1D84D3BB001934CD /* MedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MedKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		220445501D84D3BB001934CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220445551D84D3BB001934CD /* MedKit iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MedKit iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2204455A1D84D3BB001934CD /* MedKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedKitTests.swift; sourceTree = "<group>"; };
+		2204455C1D84D3BB001934CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220A343A1EBE176E0024DF9E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		220A34441EBF42950024DF9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		223971131E2E5511000B6B65 /* MedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		223971151E2E5511000B6B65 /* MedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MedKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		223971161E2E5511000B6B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2239711B1E2E5511000B6B65 /* MedKit macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MedKit macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		223971201E2E5511000B6B65 /* MedKit_MacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedKit_MacOSTests.swift; sourceTree = "<group>"; };
+		223971221E2E5511000B6B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitCore.xcodeproj; path = ../MedKitCore-Swift/MedKitCore.xcodeproj; sourceTree = "<group>"; };
+		2243DE811E87F7E000A188FD /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Typealias.swift; path = Source/Typealias.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		225A46911EB37E8D004EE389 /* Release Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "Release Notes.rtf"; path = "Documentation/Release Notes.rtf"; sourceTree = "<group>"; };
+		22B143981E893980005A35B9 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = Source/Main.swift; sourceTree = "<group>"; };
+		22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitMIP.xcodeproj; path = ../MedKitMIP-Swift/MedKitMIP.xcodeproj; sourceTree = "<group>"; };
+		22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitSecurity.xcodeproj; path = ../MedKitSecurity-Swift/MedKitSecurity.xcodeproj; sourceTree = "<group>"; };
+		22CA1E3B1E8818510091CB87 /* ServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = ServiceType.swift; path = Source/ServiceType.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		22CA1E401E88198A0091CB87 /* UnitType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = UnitType.swift; path = Source/UnitType.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		22CA1E431E8819E20091CB87 /* ResourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = ResourceType.swift; path = Source/ResourceType.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		22CA1E461E881ADF0091CB87 /* SchemaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SchemaType.swift; path = Source/SchemaType.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitDomain.xcodeproj; path = ../MedKitDomain-Swift/MedKitDomain.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220445481D84D3BB001934CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B144B51E894B89005A35B9 /* CommonCrypto.framework in Frameworks */,
+				22B1442E1E893DDC005A35B9 /* MedKitSecurity.framework in Frameworks */,
+				22B143AE1E893AAA005A35B9 /* MedKitMIP.framework in Frameworks */,
+				22CA1EF61E88320B0091CB87 /* MedKitDomain.framework in Frameworks */,
+				2243DE8E1E87F98600A188FD /* MedKitCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220445521D84D3BB001934CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220445561D84D3BB001934CD /* MedKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2239710F1E2E5511000B6B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B144B61E894B8D005A35B9 /* CommonCrypto.framework in Frameworks */,
+				22B1442F1E893DE1005A35B9 /* MedKitSecurity.framework in Frameworks */,
+				22B143AF1E893AAF005A35B9 /* MedKitMIP.framework in Frameworks */,
+				22CA1EF71E8832110091CB87 /* MedKitDomain.framework in Frameworks */,
+				2243DE8F1E87F98D00A188FD /* MedKitCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223971181E2E5511000B6B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2239711C1E2E5511000B6B65 /* MedKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220445421D84D3BB001934CD = {
+			isa = PBXGroup;
+			children = (
+				2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */,
+				22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */,
+				22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */,
+				22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */,
+				225A46841EB37E7E004EE389 /* Documentation */,
+				223971C91E2E5AEA000B6B65 /* Source */,
+				2204454E1D84D3BB001934CD /* MedKit iOS */,
+				220445591D84D3BB001934CD /* MedKit iOSTests */,
+				223971141E2E5511000B6B65 /* MedKit macOS */,
+				2239711F1E2E5511000B6B65 /* MedKit macOSTests */,
+				2204454D1D84D3BB001934CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2204454D1D84D3BB001934CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2204454C1D84D3BB001934CD /* MedKit.framework */,
+				220445551D84D3BB001934CD /* MedKit iOSTests.xctest */,
+				223971131E2E5511000B6B65 /* MedKit.framework */,
+				2239711B1E2E5511000B6B65 /* MedKit macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2204454E1D84D3BB001934CD /* MedKit iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2204454F1D84D3BB001934CD /* MedKit.h */,
+				220445501D84D3BB001934CD /* Info.plist */,
+			);
+			name = "MedKit iOS";
+			path = MedKit;
+			sourceTree = "<group>";
+		};
+		220445591D84D3BB001934CD /* MedKit iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2204455A1D84D3BB001934CD /* MedKitTests.swift */,
+				2204455C1D84D3BB001934CD /* Info.plist */,
+			);
+			name = "MedKit iOSTests";
+			path = MedKitTests;
+			sourceTree = "<group>";
+		};
+		223971141E2E5511000B6B65 /* MedKit macOS */ = {
+			isa = PBXGroup;
+			children = (
+				223971151E2E5511000B6B65 /* MedKit.h */,
+				223971161E2E5511000B6B65 /* Info.plist */,
+			);
+			name = "MedKit macOS";
+			path = "MedKit MacOS";
+			sourceTree = "<group>";
+		};
+		2239711F1E2E5511000B6B65 /* MedKit macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				223971201E2E5511000B6B65 /* MedKit_MacOSTests.swift */,
+				223971221E2E5511000B6B65 /* Info.plist */,
+			);
+			name = "MedKit macOSTests";
+			path = "MedKit MacOSTests";
+			sourceTree = "<group>";
+		};
+		223971C91E2E5AEA000B6B65 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				22B144551E893F41005A35B9 /* Main */,
+				22B144541E893F2D005A35B9 /* Constants */,
+			);
+			name = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		2243DE731E87F7CC00A188FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2243DE7A1E87F7CC00A188FD /* MedKitCore.framework */,
+				2243DE7C1E87F7CC00A188FD /* MedKitCore iOSTests.xctest */,
+				2243DE7E1E87F7CC00A188FD /* MedKitCore.framework */,
+				2243DE801E87F7CC00A188FD /* MedKitCore macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		225A46841EB37E7E004EE389 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				220A34441EBF42950024DF9E /* README.md */,
+				220A343A1EBE176E0024DF9E /* LICENSE.txt */,
+				225A46911EB37E8D004EE389 /* Release Notes.rtf */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		22B143A01E893A89005A35B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B143A71E893A89005A35B9 /* MedKitMIP.framework */,
+				22B143A91E893A89005A35B9 /* MedKitMIP iOSTests.xctest */,
+				22B143AB1E893A89005A35B9 /* MedKitMIP.framework */,
+				22B143AD1E893A89005A35B9 /* MedKitMIP macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B144141E893DD0005A35B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B1441F1E893DD1005A35B9 /* MedKitSecurity.framework */,
+				22B144211E893DD1005A35B9 /* MedKitSecurity iOSTests.xctest */,
+				22B144231E893DD1005A35B9 /* MedKitSecurity.framework */,
+				22B144251E893DD1005A35B9 /* MedKitSecurity macOSTests.xctest */,
+				22B144271E893DD1005A35B9 /* CommonCrypto.framework */,
+				22B144291E893DD1005A35B9 /* CommonCrypto iOSTests.xctest */,
+				22B1442B1E893DD1005A35B9 /* CommonCrypto.framework */,
+				22B1442D1E893DD1005A35B9 /* CommonCrypto macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B144541E893F2D005A35B9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				22CA1E431E8819E20091CB87 /* ResourceType.swift */,
+				22CA1E461E881ADF0091CB87 /* SchemaType.swift */,
+				22CA1E3B1E8818510091CB87 /* ServiceType.swift */,
+				22CA1E401E88198A0091CB87 /* UnitType.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		22B144551E893F41005A35B9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				22B143981E893980005A35B9 /* Main.swift */,
+				2243DE811E87F7E000A188FD /* Typealias.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		22CA1EE81E8832020091CB87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */,
+				22CA1EF11E8832020091CB87 /* MedKitDomain iOSTests.xctest */,
+				22CA1EF31E8832020091CB87 /* MedKitDomain.framework */,
+				22CA1EF51E8832020091CB87 /* MedKitDomain macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		220445491D84D3BB001934CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2204455D1D84D3BB001934CD /* MedKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223971101E2E5511000B6B65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223971231E2E5511000B6B65 /* MedKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2204454B1D84D3BB001934CD /* MedKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220445601D84D3BB001934CD /* Build configuration list for PBXNativeTarget "MedKit iOS" */;
+			buildPhases = (
+				220445471D84D3BB001934CD /* Sources */,
+				220445481D84D3BB001934CD /* Frameworks */,
+				220445491D84D3BB001934CD /* Headers */,
+				2204454A1D84D3BB001934CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B144331E893DEF005A35B9 /* PBXTargetDependency */,
+				22B143B31E893AFC005A35B9 /* PBXTargetDependency */,
+				2243DE8C1E87F8F400A188FD /* PBXTargetDependency */,
+				22CA1EFB1E8832310091CB87 /* PBXTargetDependency */,
+			);
+			name = "MedKit iOS";
+			productName = MedKit;
+			productReference = 2204454C1D84D3BB001934CD /* MedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		220445541D84D3BB001934CD /* MedKit iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220445631D84D3BB001934CD /* Build configuration list for PBXNativeTarget "MedKit iOSTests" */;
+			buildPhases = (
+				220445511D84D3BB001934CD /* Sources */,
+				220445521D84D3BB001934CD /* Frameworks */,
+				220445531D84D3BB001934CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220445581D84D3BB001934CD /* PBXTargetDependency */,
+			);
+			name = "MedKit iOSTests";
+			productName = MedKitTests;
+			productReference = 220445551D84D3BB001934CD /* MedKit iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		223971121E2E5511000B6B65 /* MedKit macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223971321E2E5511000B6B65 /* Build configuration list for PBXNativeTarget "MedKit macOS" */;
+			buildPhases = (
+				2239710E1E2E5511000B6B65 /* Sources */,
+				2239710F1E2E5511000B6B65 /* Frameworks */,
+				223971101E2E5511000B6B65 /* Headers */,
+				223971111E2E5511000B6B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B144311E893DEA005A35B9 /* PBXTargetDependency */,
+				22B143B11E893AF3005A35B9 /* PBXTargetDependency */,
+				22CA1EF91E88322C0091CB87 /* PBXTargetDependency */,
+				2243DE861E87F8F000A188FD /* PBXTargetDependency */,
+			);
+			name = "MedKit macOS";
+			productName = "MedKit MacOS";
+			productReference = 223971131E2E5511000B6B65 /* MedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2239711A1E2E5511000B6B65 /* MedKit macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223971331E2E5511000B6B65 /* Build configuration list for PBXNativeTarget "MedKit macOSTests" */;
+			buildPhases = (
+				223971171E2E5511000B6B65 /* Sources */,
+				223971181E2E5511000B6B65 /* Frameworks */,
+				223971191E2E5511000B6B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2239711E1E2E5511000B6B65 /* PBXTargetDependency */,
+			);
+			name = "MedKit macOSTests";
+			productName = "MedKit MacOSTests";
+			productReference = 2239711B1E2E5511000B6B65 /* MedKit macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220445431D84D3BB001934CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jon Griffeth";
+				TargetAttributes = {
+					2204454B1D84D3BB001934CD = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					220445541D84D3BB001934CD = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					223971121E2E5511000B6B65 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2239711A1E2E5511000B6B65 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 220445461D84D3BB001934CD /* Build configuration list for PBXProject "MedKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 220445421D84D3BB001934CD;
+			productRefGroup = 2204454D1D84D3BB001934CD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2243DE731E87F7CC00A188FD /* Products */;
+					ProjectRef = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 22CA1EE81E8832020091CB87 /* Products */;
+					ProjectRef = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
+				},
+				{
+					ProductGroup = 22B143A01E893A89005A35B9 /* Products */;
+					ProjectRef = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
+				},
+				{
+					ProductGroup = 22B144141E893DD0005A35B9 /* Products */;
+					ProjectRef = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2204454B1D84D3BB001934CD /* MedKit iOS */,
+				220445541D84D3BB001934CD /* MedKit iOSTests */,
+				223971121E2E5511000B6B65 /* MedKit macOS */,
+				2239711A1E2E5511000B6B65 /* MedKit macOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2243DE7A1E87F7CC00A188FD /* MedKitCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitCore.framework;
+			remoteRef = 2243DE791E87F7CC00A188FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2243DE7C1E87F7CC00A188FD /* MedKitCore iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitCore iOSTests.xctest";
+			remoteRef = 2243DE7B1E87F7CC00A188FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2243DE7E1E87F7CC00A188FD /* MedKitCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitCore.framework;
+			remoteRef = 2243DE7D1E87F7CC00A188FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2243DE801E87F7CC00A188FD /* MedKitCore macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitCore macOSTests.xctest";
+			remoteRef = 2243DE7F1E87F7CC00A188FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B143A71E893A89005A35B9 /* MedKitMIP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitMIP.framework;
+			remoteRef = 22B143A61E893A89005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B143A91E893A89005A35B9 /* MedKitMIP iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitMIP iOSTests.xctest";
+			remoteRef = 22B143A81E893A89005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B143AB1E893A89005A35B9 /* MedKitMIP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitMIP.framework;
+			remoteRef = 22B143AA1E893A89005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B143AD1E893A89005A35B9 /* MedKitMIP macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitMIP macOSTests.xctest";
+			remoteRef = 22B143AC1E893A89005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B1441F1E893DD1005A35B9 /* MedKitSecurity.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitSecurity.framework;
+			remoteRef = 22B1441E1E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B144211E893DD1005A35B9 /* MedKitSecurity iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitSecurity iOSTests.xctest";
+			remoteRef = 22B144201E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B144231E893DD1005A35B9 /* MedKitSecurity.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitSecurity.framework;
+			remoteRef = 22B144221E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B144251E893DD1005A35B9 /* MedKitSecurity macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitSecurity macOSTests.xctest";
+			remoteRef = 22B144241E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B144271E893DD1005A35B9 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 22B144261E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B144291E893DD1005A35B9 /* CommonCrypto iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CommonCrypto iOSTests.xctest";
+			remoteRef = 22B144281E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B1442B1E893DD1005A35B9 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 22B1442A1E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B1442D1E893DD1005A35B9 /* CommonCrypto macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CommonCrypto macOSTests.xctest";
+			remoteRef = 22B1442C1E893DD1005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitDomain.framework;
+			remoteRef = 22CA1EEE1E8832020091CB87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22CA1EF11E8832020091CB87 /* MedKitDomain iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitDomain iOSTests.xctest";
+			remoteRef = 22CA1EF01E8832020091CB87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22CA1EF31E8832020091CB87 /* MedKitDomain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedKitDomain.framework;
+			remoteRef = 22CA1EF21E8832020091CB87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22CA1EF51E8832020091CB87 /* MedKitDomain macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitDomain macOSTests.xctest";
+			remoteRef = 22CA1EF41E8832020091CB87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2204454A1D84D3BB001934CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220A343B1EBE176E0024DF9E /* LICENSE.txt in Resources */,
+				225A46921EB37E8D004EE389 /* Release Notes.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220445531D84D3BB001934CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223971111E2E5511000B6B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220A34781EBF46770024DF9E /* LICENSE.txt in Resources */,
+				220A34791EBF467A0024DF9E /* Release Notes.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223971191E2E5511000B6B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220445471D84D3BB001934CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B143991E893980005A35B9 /* Main.swift in Sources */,
+				2243DE821E87F7E000A188FD /* Typealias.swift in Sources */,
+				22CA1E471E881ADF0091CB87 /* SchemaType.swift in Sources */,
+				220A34451EBF42950024DF9E /* README.md in Sources */,
+				22CA1E411E88198A0091CB87 /* UnitType.swift in Sources */,
+				22CA1E3C1E8818510091CB87 /* ServiceType.swift in Sources */,
+				22CA1E441E8819E20091CB87 /* ResourceType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220445511D84D3BB001934CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2204455B1D84D3BB001934CD /* MedKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2239710E1E2E5511000B6B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1439E1E893A75005A35B9 /* Main.swift in Sources */,
+				2243DE9B1E87FB0200A188FD /* Typealias.swift in Sources */,
+				22CA1E481E881B910091CB87 /* SchemaType.swift in Sources */,
+				220A346B1EBF46740024DF9E /* README.md in Sources */,
+				22CA1E421E8819950091CB87 /* UnitType.swift in Sources */,
+				22CA1E3F1E8818540091CB87 /* ServiceType.swift in Sources */,
+				22CA1E451E8819E50091CB87 /* ResourceType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223971171E2E5511000B6B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223971211E2E5511000B6B65 /* MedKit_MacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220445581D84D3BB001934CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2204454B1D84D3BB001934CD /* MedKit iOS */;
+			targetProxy = 220445571D84D3BB001934CD /* PBXContainerItemProxy */;
+		};
+		2239711E1E2E5511000B6B65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 223971121E2E5511000B6B65 /* MedKit macOS */;
+			targetProxy = 2239711D1E2E5511000B6B65 /* PBXContainerItemProxy */;
+		};
+		2243DE861E87F8F000A188FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitCore macOS";
+			targetProxy = 2243DE851E87F8F000A188FD /* PBXContainerItemProxy */;
+		};
+		2243DE8C1E87F8F400A188FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitCore iOS";
+			targetProxy = 2243DE8B1E87F8F400A188FD /* PBXContainerItemProxy */;
+		};
+		22B143B11E893AF3005A35B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitMIP macOS";
+			targetProxy = 22B143B01E893AF3005A35B9 /* PBXContainerItemProxy */;
+		};
+		22B143B31E893AFC005A35B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitMIP iOS";
+			targetProxy = 22B143B21E893AFC005A35B9 /* PBXContainerItemProxy */;
+		};
+		22B144311E893DEA005A35B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitSecurity macOS";
+			targetProxy = 22B144301E893DEA005A35B9 /* PBXContainerItemProxy */;
+		};
+		22B144331E893DEF005A35B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitSecurity iOS";
+			targetProxy = 22B144321E893DEF005A35B9 /* PBXContainerItemProxy */;
+		};
+		22CA1EF91E88322C0091CB87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitDomain macOS";
+			targetProxy = 22CA1EF81E88322C0091CB87 /* PBXContainerItemProxy */;
+		};
+		22CA1EFB1E8832310091CB87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MedKitDomain iOS";
+			targetProxy = 22CA1EFA1E8832310091CB87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2204455E1D84D3BB001934CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 23;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2204455F1D84D3BB001934CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 23;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		220445611D84D3BB001934CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 23;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MedKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKit;
+				PRODUCT_NAME = MedKit;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		220445621D84D3BB001934CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 23;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MedKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKit;
+				PRODUCT_NAME = MedKit;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		220445641D84D3BB001934CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		220445651D84D3BB001934CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		223971241E2E5511000B6B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 23;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "MedKit MacOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKit;
+				PRODUCT_NAME = MedKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		223971251E2E5511000B6B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 23;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "MedKit MacOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKit;
+				PRODUCT_NAME = MedKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		223971261E2E5511000B6B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "MedKit MacOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "Private.MedKit-MacOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		223971271E2E5511000B6B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "MedKit MacOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "Private.MedKit-MacOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220445461D84D3BB001934CD /* Build configuration list for PBXProject "MedKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2204455E1D84D3BB001934CD /* Debug */,
+				2204455F1D84D3BB001934CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220445601D84D3BB001934CD /* Build configuration list for PBXNativeTarget "MedKit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220445611D84D3BB001934CD /* Debug */,
+				220445621D84D3BB001934CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220445631D84D3BB001934CD /* Build configuration list for PBXNativeTarget "MedKit iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220445641D84D3BB001934CD /* Debug */,
+				220445651D84D3BB001934CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223971321E2E5511000B6B65 /* Build configuration list for PBXNativeTarget "MedKit macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223971241E2E5511000B6B65 /* Debug */,
+				223971251E2E5511000B6B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223971331E2E5511000B6B65 /* Build configuration list for PBXNativeTarget "MedKit macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223971261E2E5511000B6B65 /* Debug */,
+				223971271E2E5511000B6B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 220445431D84D3BB001934CD /* Project object */;
+}

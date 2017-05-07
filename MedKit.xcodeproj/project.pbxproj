@@ -10,11 +10,6 @@
 		220445561D84D3BB001934CD /* MedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204454C1D84D3BB001934CD /* MedKit.framework */; };
 		2204455B1D84D3BB001934CD /* MedKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2204455A1D84D3BB001934CD /* MedKitTests.swift */; };
 		2204455D1D84D3BB001934CD /* MedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204454F1D84D3BB001934CD /* MedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		220A343B1EBE176E0024DF9E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 220A343A1EBE176E0024DF9E /* LICENSE.txt */; };
-		220A34451EBF42950024DF9E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 220A34441EBF42950024DF9E /* README.md */; };
-		220A346B1EBF46740024DF9E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 220A34441EBF42950024DF9E /* README.md */; };
-		220A34781EBF46770024DF9E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 220A343A1EBE176E0024DF9E /* LICENSE.txt */; };
-		220A34791EBF467A0024DF9E /* Release Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 225A46911EB37E8D004EE389 /* Release Notes.rtf */; };
 		2239711C1E2E5511000B6B65 /* MedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223971131E2E5511000B6B65 /* MedKit.framework */; };
 		223971211E2E5511000B6B65 /* MedKit_MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223971201E2E5511000B6B65 /* MedKit_MacOSTests.swift */; };
 		223971231E2E5511000B6B65 /* MedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 223971151E2E5511000B6B65 /* MedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,7 +17,6 @@
 		2243DE8E1E87F98600A188FD /* MedKitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243DE7A1E87F7CC00A188FD /* MedKitCore.framework */; };
 		2243DE8F1E87F98D00A188FD /* MedKitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243DE7E1E87F7CC00A188FD /* MedKitCore.framework */; };
 		2243DE9B1E87FB0200A188FD /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243DE811E87F7E000A188FD /* Typealias.swift */; };
-		225A46921EB37E8D004EE389 /* Release Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 225A46911EB37E8D004EE389 /* Release Notes.rtf */; };
 		22B143991E893980005A35B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B143981E893980005A35B9 /* Main.swift */; };
 		22B1439E1E893A75005A35B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B143981E893980005A35B9 /* Main.swift */; };
 		22B143AE1E893AAA005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143A71E893A89005A35B9 /* MedKitMIP.framework */; };
@@ -800,8 +794,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220A343B1EBE176E0024DF9E /* LICENSE.txt in Resources */,
-				225A46921EB37E8D004EE389 /* Release Notes.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,8 +808,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220A34781EBF46770024DF9E /* LICENSE.txt in Resources */,
-				220A34791EBF467A0024DF9E /* Release Notes.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,7 +828,6 @@
 				22B143991E893980005A35B9 /* Main.swift in Sources */,
 				2243DE821E87F7E000A188FD /* Typealias.swift in Sources */,
 				22CA1E471E881ADF0091CB87 /* SchemaType.swift in Sources */,
-				220A34451EBF42950024DF9E /* README.md in Sources */,
 				22CA1E411E88198A0091CB87 /* UnitType.swift in Sources */,
 				22CA1E3C1E8818510091CB87 /* ServiceType.swift in Sources */,
 				22CA1E441E8819E20091CB87 /* ResourceType.swift in Sources */,
@@ -860,7 +849,6 @@
 				22B1439E1E893A75005A35B9 /* Main.swift in Sources */,
 				2243DE9B1E87FB0200A188FD /* Typealias.swift in Sources */,
 				22CA1E481E881B910091CB87 /* SchemaType.swift in Sources */,
-				220A346B1EBF46740024DF9E /* README.md in Sources */,
 				22CA1E421E8819950091CB87 /* UnitType.swift in Sources */,
 				22CA1E3F1E8818540091CB87 /* ServiceType.swift in Sources */,
 				22CA1E451E8819E50091CB87 /* ResourceType.swift in Sources */,
@@ -955,7 +943,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1012,7 +1000,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1044,11 +1032,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_CURRENT_VERSION = 24;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1070,11 +1058,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_CURRENT_VERSION = 24;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1119,11 +1107,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_CURRENT_VERSION = 24;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "MedKit MacOS/Info.plist";
@@ -1143,11 +1131,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_CURRENT_VERSION = 24;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "MedKit MacOS/Info.plist";

@@ -47,7 +47,6 @@ import Foundation
 @_exported import class    MedKitCore.Principal
 @_exported import protocol MedKitCore.Resource
 @_exported import protocol MedKitCore.ResourceCache
-@_exported import class    MedKitCore.ResourceCacheBase // TODO: temporary
 @_exported import protocol MedKitCore.ResourceObserver
 @_exported import protocol MedKitCore.SecurityManager
 @_exported import class    MedKitCore.SecurityManagerShared

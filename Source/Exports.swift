@@ -25,6 +25,10 @@ import Foundation
 // MARK: - MedKitCore
 @_exported import enum     MedKitCore.Access
 @_exported import protocol MedKitCore.Authorization
+@_exported import protocol MedKitCore.CameraController
+@_exported import protocol MedKitCore.CameraControllerDelegate
+@_exported import class    MedKitCore.CameraControllers
+@_exported import protocol MedKitCore.CameraSource
 @_exported import protocol MedKitCore.Credentials
 @_exported import protocol MedKitCore.Device
 @_exported import protocol MedKitCore.DeviceBrowser
@@ -35,6 +39,7 @@ import Foundation
 @_exported import protocol MedKitCore.DeviceProtocol
 @_exported import class    MedKitCore.DeviceProtocols
 @_exported import protocol MedKitCore.DeviceProxy
+@_exported import class    MedKitCore.DeviceType
 @_exported import class    MedKitCore.Identity
 @_exported import class    MedKitCore.JSON
 @_exported import class    MedKitCore.JSONParser
@@ -48,16 +53,18 @@ import Foundation
 @_exported import protocol MedKitCore.Resource
 @_exported import protocol MedKitCore.ResourceCache
 @_exported import protocol MedKitCore.ResourceObserver
+@_exported import class    MedKitCore.ResourceType
 @_exported import protocol MedKitCore.SecurityManager
 @_exported import class    MedKitCore.SecurityManagerShared
 @_exported import protocol MedKitCore.Service
 @_exported import protocol MedKitCore.ServiceObserver
-@_exported import class    MedKitCore.SharedSecret
+@_exported import class    MedKitCore.ServiceType
 @_exported import class    MedKitCore.Sync
-
-@_exported import func     MedKitCore.deviceTypeName
-@_exported import var      MedKitCore.serviceTypeName
-@_exported import func     MedKitCore.unitLocalizedDescription
+@_exported import class    MedKitCore.UnitType
+@_exported import protocol MedKitCore.WaveformController
+@_exported import protocol MedKitCore.WaveformControllerDelegate
+@_exported import class    MedKitCore.WaveformControllers
+@_exported import protocol MedKitCore.WaveformSource
 
 @_exported import var      MedKitCore.DeviceTypeOther
 @_exported import var      MedKitCore.DeviceTypeBridge

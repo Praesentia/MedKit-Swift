@@ -19,10 +19,10 @@
  */
 
 
-import Foundation;
-import MedKitCore;
-import MedKitMIP;
-import MedKitSecurity;
+import Foundation
+import MedKitCore
+import MedKitMIP
+import MedKitSecurity
 
 
 /**
@@ -30,12 +30,11 @@ import MedKitSecurity;
  */
 public func initialize(service: String)
 {
-    MedKitSecurity.initialize(service: service);
+    MedKitSecurity.initialize(service: service)
     
     for deviceProtocol in MedKitMIP.deviceProtocols {
-        DeviceProtocols.main.registerProtocol(deviceProtocol);
+        DeviceProtocols.main.registerProtocol(deviceProtocol)
     }
-    
 }
 
 

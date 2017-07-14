@@ -27,10 +27,14 @@ import MedKitSecurity
 
 /**
  Initialize MedKit module.
+ 
+ - Parameters:
+    - service:  Keychain service identifier.
+    - keychain: Keychain instance.
  */
-public func initialize(service: String, keychain: SecKeychain?)
+public func initialize(keychain: SecKeychain? = nil)
 {
-    MedKitSecurity.initialize(service: service, keychain: keychain)
+    MedKitSecurity.initialize(keychain: keychain)
     
     for deviceProtocol in MedKitMIP.deviceProtocols {
         DeviceProtocols.main.registerProtocol(deviceProtocol)

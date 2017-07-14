@@ -24,12 +24,10 @@ import Foundation
 
 // MARK: - MedKitCore
 @_exported import enum     MedKitCore.Access
-@_exported import protocol MedKitCore.Authorization
 @_exported import protocol MedKitCore.CameraController
 @_exported import protocol MedKitCore.CameraControllerDelegate
 @_exported import class    MedKitCore.CameraControllers
 @_exported import protocol MedKitCore.CameraSource
-@_exported import protocol MedKitCore.Credentials
 @_exported import protocol MedKitCore.Device
 @_exported import protocol MedKitCore.DeviceBrowser
 @_exported import protocol MedKitCore.DeviceBrowserObserver
@@ -40,22 +38,17 @@ import Foundation
 @_exported import class    MedKitCore.DeviceProtocols
 @_exported import protocol MedKitCore.DeviceProxy
 @_exported import class    MedKitCore.DeviceType
-@_exported import class    MedKitCore.Identity
 @_exported import class    MedKitCore.JSON
 @_exported import class    MedKitCore.JSONParser
 @_exported import class    MedKitCore.JSONWriter
 @_exported import enum     MedKitCore.MedKitError
 @_exported import class    MedKitCore.NetPortFactory
-@_exported import class    MedKitCore.NullAuthorization
 @_exported import class    MedKitCore.ObserverManager
 @_exported import protocol MedKitCore.PortFactory
-@_exported import class    MedKitCore.Principal
 @_exported import protocol MedKitCore.Resource
 @_exported import protocol MedKitCore.ResourceCache
 @_exported import protocol MedKitCore.ResourceObserver
 @_exported import class    MedKitCore.ResourceType
-@_exported import protocol MedKitCore.SecurityManager
-@_exported import class    MedKitCore.SecurityManagerShared
 @_exported import protocol MedKitCore.Service
 @_exported import protocol MedKitCore.ServiceObserver
 @_exported import class    MedKitCore.ServiceType
@@ -128,7 +121,6 @@ import Foundation
 @_exported import var      MedKitCore.KeyData
 @_exported import var      MedKitCore.KeyDescription
 @_exported import var      MedKitCore.KeyIdentifier
-@_exported import var      MedKitCore.KeyIdentity
 @_exported import var      MedKitCore.KeyIndex
 @_exported import var      MedKitCore.KeyDiastolic
 @_exported import var      MedKitCore.KeyMeasurement

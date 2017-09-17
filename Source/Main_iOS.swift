@@ -22,7 +22,7 @@
 import Foundation
 import MedKitCore
 import MedKitMIP
-import MedKitSecurity
+import SecurityKitAOS
 
 
 /**
@@ -33,7 +33,7 @@ import MedKitSecurity
  */
 public func initialize()
 {
-    MedKitSecurity.initialize()
+    SecurityKitAOS.initialize()
     
     for deviceProtocol in MedKitMIP.deviceProtocols {
         DeviceProtocols.main.registerProtocol(deviceProtocol)

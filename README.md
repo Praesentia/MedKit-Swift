@@ -7,7 +7,7 @@ MedKit is an open source framework facilitating secure, bi-directional
 communication with medical devices.
 
 The MedKit module is one of a number of modules which include: MedKitCore,
-MedKitDomain, MedKitMIP, MedKitSecurity and SecurityKit.  This module is primarily a
+MedKitDomain, MedKitMIP, SecurityKitAOS and SecurityKit.  This module is primarily a
 wrapper for the MedKitCore and MedKitDomain modules, exporting only those interfaces
 that comprise the MedKit client API.
 
@@ -28,7 +28,7 @@ that comprise the MedKit client API.
 * MedKitCore
 * MedKitDomain
 * MedKitMIP
-* MedKitSecurity
+* SecurityKitAOS
 
 ## Installation
 

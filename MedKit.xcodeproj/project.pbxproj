@@ -21,12 +21,10 @@
 		22B143991E893980005A35B9 /* Main_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B143981E893980005A35B9 /* Main_iOS.swift */; };
 		22B143AE1E893AAA005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143A71E893A89005A35B9 /* MedKitMIP.framework */; };
 		22B143AF1E893AAF005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143AB1E893A89005A35B9 /* MedKitMIP.framework */; };
-		22B1442E1E893DDC005A35B9 /* MedKitSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1441F1E893DD1005A35B9 /* MedKitSecurity.framework */; };
-		22B1442F1E893DE1005A35B9 /* MedKitSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B144231E893DD1005A35B9 /* MedKitSecurity.framework */; };
-		22B144B51E894B89005A35B9 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B144271E893DD1005A35B9 /* CommonCrypto.framework */; };
-		22B144B61E894B8D005A35B9 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1442B1E893DD1005A35B9 /* CommonCrypto.framework */; };
 		22CA1EF61E88320B0091CB87 /* MedKitDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */; };
 		22CA1EF71E8832110091CB87 /* MedKitDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CA1EF31E8832020091CB87 /* MedKitDomain.framework */; };
+		22D771491F6DA65D00CF3015 /* SecurityKitAOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D771371F6DA5F900CF3015 /* SecurityKitAOS.framework */; };
+		22D7714A1F6DA66700CF3015 /* SecurityKitAOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D7713D1F6DA5F900CF3015 /* SecurityKitAOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,20 +70,6 @@
 			remoteGlobalIDString = 2243DC9D1E872BF100A188FD;
 			remoteInfo = "MedKitCore macOSTests";
 		};
-		2243DE851E87F8F000A188FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2243DC941E872BF100A188FD;
-			remoteInfo = "MedKitCore macOS";
-		};
-		2243DE8B1E87F8F400A188FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2243DC781E872BDB00A188FD;
-			remoteInfo = "MedKitCore iOS";
-		};
 		22B143A61E893A89005A35B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
@@ -113,90 +97,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 22CA1FBE1E883B5B0091CB87;
 			remoteInfo = "MedKitMIP macOSTests";
-		};
-		22B143B01E893AF3005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CA1FB51E883B5B0091CB87;
-			remoteInfo = "MedKitMIP macOS";
-		};
-		22B143B21E893AFC005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CA1F991E883B490091CB87;
-			remoteInfo = "MedKitMIP iOS";
-		};
-		22B1441E1E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2211563C1E2E73C800B5D239;
-			remoteInfo = "MedKitSecurity iOS";
-		};
-		22B144201E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 221156441E2E73C800B5D239;
-			remoteInfo = "MedKitSecurity iOSTests";
-		};
-		22B144221E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 221156581E2E73E200B5D239;
-			remoteInfo = "MedKitSecurity macOS";
-		};
-		22B144241E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 221156601E2E73E300B5D239;
-			remoteInfo = "MedKitSecurity macOSTests";
-		};
-		22B144261E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2211567B1E2E758E00B5D239;
-			remoteInfo = "CommonCrypto iOS";
-		};
-		22B144281E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 221156831E2E758E00B5D239;
-			remoteInfo = "CommonCrypto iOSTests";
-		};
-		22B1442A1E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 221157A91E2E85AF00B5D239;
-			remoteInfo = "CommonCrypto macOS";
-		};
-		22B1442C1E893DD1005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 221157B11E2E85AF00B5D239;
-			remoteInfo = "CommonCrypto macOSTests";
-		};
-		22B144301E893DEA005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 221156571E2E73E200B5D239;
-			remoteInfo = "MedKitSecurity macOS";
-		};
-		22B144321E893DEF005A35B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2211563B1E2E73C800B5D239;
-			remoteInfo = "MedKitSecurity iOS";
 		};
 		22CA1EEE1E8832020091CB87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -226,19 +126,68 @@
 			remoteGlobalIDString = 22CA1E981E882B1A0091CB87;
 			remoteInfo = "MedKitDomain macOSTests";
 		};
-		22CA1EF81E88322C0091CB87 /* PBXContainerItemProxy */ = {
+		22D771361F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CA1E8F1E882B1A0091CB87;
-			remoteInfo = "MedKitDomain macOS";
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2211563C1E2E73C800B5D239;
+			remoteInfo = "SecurityKitAOS iOS";
 		};
-		22CA1EFA1E8832310091CB87 /* PBXContainerItemProxy */ = {
+		22D771381F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CA1E731E882B030091CB87;
-			remoteInfo = "MedKitDomain iOS";
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156441E2E73C800B5D239;
+			remoteInfo = "SecurityKitAOS iOSTests";
+		};
+		22D7713A1F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22F9FB8C1F4078BB00F4957C;
+			remoteInfo = "SecurityKitAOS iOSTestApp";
+		};
+		22D7713C1F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156581E2E73E200B5D239;
+			remoteInfo = "SecurityKitAOS macOS";
+		};
+		22D7713E1F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156601E2E73E300B5D239;
+			remoteInfo = "SecurityKitAOS macOSTests";
+		};
+		22D771401F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2211567B1E2E758E00B5D239;
+			remoteInfo = "CommonCrypto iOS";
+		};
+		22D771421F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221156831E2E758E00B5D239;
+			remoteInfo = "CommonCrypto iOSTests";
+		};
+		22D771441F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221157A91E2E85AF00B5D239;
+			remoteInfo = "CommonCrypto macOS";
+		};
+		22D771461F6DA5F900CF3015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 221157B11E2E85AF00B5D239;
+			remoteInfo = "CommonCrypto macOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -263,8 +212,8 @@
 		2276C5CE1EF847110030352C /* Main_macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main_macOS.swift; path = Source/Main_macOS.swift; sourceTree = "<group>"; };
 		22B143981E893980005A35B9 /* Main_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main_iOS.swift; path = Source/Main_iOS.swift; sourceTree = "<group>"; };
 		22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitMIP.xcodeproj; path = ../MedKitMIP-Swift/MedKitMIP.xcodeproj; sourceTree = "<group>"; };
-		22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitSecurity.xcodeproj; path = ../MedKitSecurity-Swift/MedKitSecurity.xcodeproj; sourceTree = "<group>"; };
 		22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitDomain.xcodeproj; path = ../MedKitDomain-Swift/MedKitDomain.xcodeproj; sourceTree = "<group>"; };
+		22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecurityKitAOS.xcodeproj; path = ../SecurityKitAOS/SecurityKitAOS.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,8 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B144B51E894B89005A35B9 /* CommonCrypto.framework in Frameworks */,
-				22B1442E1E893DDC005A35B9 /* MedKitSecurity.framework in Frameworks */,
+				22D771491F6DA65D00CF3015 /* SecurityKitAOS.framework in Frameworks */,
 				22B143AE1E893AAA005A35B9 /* MedKitMIP.framework in Frameworks */,
 				22CA1EF61E88320B0091CB87 /* MedKitDomain.framework in Frameworks */,
 				2243DE8E1E87F98600A188FD /* MedKitCore.framework in Frameworks */,
@@ -292,8 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B144B61E894B8D005A35B9 /* CommonCrypto.framework in Frameworks */,
-				22B1442F1E893DE1005A35B9 /* MedKitSecurity.framework in Frameworks */,
+				22D7714A1F6DA66700CF3015 /* SecurityKitAOS.framework in Frameworks */,
 				22B143AF1E893AAF005A35B9 /* MedKitMIP.framework in Frameworks */,
 				22CA1EF71E8832110091CB87 /* MedKitDomain.framework in Frameworks */,
 				2243DE8F1E87F98D00A188FD /* MedKitCore.framework in Frameworks */,
@@ -317,7 +264,7 @@
 				2243DE721E87F7CC00A188FD /* MedKitCore.xcodeproj */,
 				22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */,
 				22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */,
-				22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */,
+				22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */,
 				225A46841EB37E7E004EE389 /* Documentation */,
 				223971C91E2E5AEA000B6B65 /* Source */,
 				2204454E1D84D3BB001934CD /* MedKit iOS */,
@@ -325,6 +272,7 @@
 				223971141E2E5511000B6B65 /* MedKit macOS */,
 				2239711F1E2E5511000B6B65 /* MedKit macOSTests */,
 				2204454D1D84D3BB001934CD /* Products */,
+				22D771481F6DA65D00CF3015 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -421,21 +369,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22B144141E893DD0005A35B9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				22B1441F1E893DD1005A35B9 /* MedKitSecurity.framework */,
-				22B144211E893DD1005A35B9 /* MedKitSecurity iOSTests.xctest */,
-				22B144231E893DD1005A35B9 /* MedKitSecurity.framework */,
-				22B144251E893DD1005A35B9 /* MedKitSecurity macOSTests.xctest */,
-				22B144271E893DD1005A35B9 /* CommonCrypto.framework */,
-				22B144291E893DD1005A35B9 /* CommonCrypto iOSTests.xctest */,
-				22B1442B1E893DD1005A35B9 /* CommonCrypto.framework */,
-				22B1442D1E893DD1005A35B9 /* CommonCrypto macOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		22CA1EE81E8832020091CB87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +378,29 @@
 				22CA1EF51E8832020091CB87 /* MedKitDomain macOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		22D7712B1F6DA5F900CF3015 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D771371F6DA5F900CF3015 /* SecurityKitAOS.framework */,
+				22D771391F6DA5F900CF3015 /* SecurityKitAOS iOSTests.xctest */,
+				22D7713B1F6DA5F900CF3015 /* SecurityKitAOS iOSTestApp.app */,
+				22D7713D1F6DA5F900CF3015 /* SecurityKitAOS.framework */,
+				22D7713F1F6DA5F900CF3015 /* SecurityKitAOS macOSTests.xctest */,
+				22D771411F6DA5F900CF3015 /* CommonCrypto.framework */,
+				22D771431F6DA5F900CF3015 /* CommonCrypto iOSTests.xctest */,
+				22D771451F6DA5F900CF3015 /* CommonCrypto.framework */,
+				22D771471F6DA5F900CF3015 /* CommonCrypto macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D771481F6DA65D00CF3015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,10 +437,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22B144331E893DEF005A35B9 /* PBXTargetDependency */,
-				22B143B31E893AFC005A35B9 /* PBXTargetDependency */,
-				2243DE8C1E87F8F400A188FD /* PBXTargetDependency */,
-				22CA1EFB1E8832310091CB87 /* PBXTargetDependency */,
 			);
 			name = "MedKit iOS";
 			productName = MedKit;
@@ -521,10 +473,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22B144311E893DEA005A35B9 /* PBXTargetDependency */,
-				22B143B11E893AF3005A35B9 /* PBXTargetDependency */,
-				22CA1EF91E88322C0091CB87 /* PBXTargetDependency */,
-				2243DE861E87F8F000A188FD /* PBXTargetDependency */,
 			);
 			name = "MedKit macOS";
 			productName = "MedKit MacOS";
@@ -585,6 +533,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 220445421D84D3BB001934CD;
 			productRefGroup = 2204454D1D84D3BB001934CD /* Products */;
@@ -603,8 +552,8 @@
 					ProjectRef = 22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */;
 				},
 				{
-					ProductGroup = 22B144141E893DD0005A35B9 /* Products */;
-					ProjectRef = 22B144131E893DD0005A35B9 /* MedKitSecurity.xcodeproj */;
+					ProductGroup = 22D7712B1F6DA5F900CF3015 /* Products */;
+					ProjectRef = 22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -674,62 +623,6 @@
 			remoteRef = 22B143AC1E893A89005A35B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		22B1441F1E893DD1005A35B9 /* MedKitSecurity.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MedKitSecurity.framework;
-			remoteRef = 22B1441E1E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B144211E893DD1005A35B9 /* MedKitSecurity iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "MedKitSecurity iOSTests.xctest";
-			remoteRef = 22B144201E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B144231E893DD1005A35B9 /* MedKitSecurity.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MedKitSecurity.framework;
-			remoteRef = 22B144221E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B144251E893DD1005A35B9 /* MedKitSecurity macOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "MedKitSecurity macOSTests.xctest";
-			remoteRef = 22B144241E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B144271E893DD1005A35B9 /* CommonCrypto.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CommonCrypto.framework;
-			remoteRef = 22B144261E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B144291E893DD1005A35B9 /* CommonCrypto iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CommonCrypto iOSTests.xctest";
-			remoteRef = 22B144281E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B1442B1E893DD1005A35B9 /* CommonCrypto.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CommonCrypto.framework;
-			remoteRef = 22B1442A1E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22B1442D1E893DD1005A35B9 /* CommonCrypto macOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CommonCrypto macOSTests.xctest";
-			remoteRef = 22B1442C1E893DD1005A35B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -756,6 +649,69 @@
 			fileType = wrapper.cfbundle;
 			path = "MedKitDomain macOSTests.xctest";
 			remoteRef = 22CA1EF41E8832020091CB87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D771371F6DA5F900CF3015 /* SecurityKitAOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SecurityKitAOS.framework;
+			remoteRef = 22D771361F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D771391F6DA5F900CF3015 /* SecurityKitAOS iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SecurityKitAOS iOSTests.xctest";
+			remoteRef = 22D771381F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D7713B1F6DA5F900CF3015 /* SecurityKitAOS iOSTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "SecurityKitAOS iOSTestApp.app";
+			remoteRef = 22D7713A1F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D7713D1F6DA5F900CF3015 /* SecurityKitAOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SecurityKitAOS.framework;
+			remoteRef = 22D7713C1F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D7713F1F6DA5F900CF3015 /* SecurityKitAOS macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SecurityKitAOS macOSTests.xctest";
+			remoteRef = 22D7713E1F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D771411F6DA5F900CF3015 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 22D771401F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D771431F6DA5F900CF3015 /* CommonCrypto iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CommonCrypto iOSTests.xctest";
+			remoteRef = 22D771421F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D771451F6DA5F900CF3015 /* CommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonCrypto.framework;
+			remoteRef = 22D771441F6DA5F900CF3015 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22D771471F6DA5F900CF3015 /* CommonCrypto macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CommonCrypto macOSTests.xctest";
+			remoteRef = 22D771461F6DA5F900CF3015 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -839,46 +795,6 @@
 			target = 223971121E2E5511000B6B65 /* MedKit macOS */;
 			targetProxy = 2239711D1E2E5511000B6B65 /* PBXContainerItemProxy */;
 		};
-		2243DE861E87F8F000A188FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitCore macOS";
-			targetProxy = 2243DE851E87F8F000A188FD /* PBXContainerItemProxy */;
-		};
-		2243DE8C1E87F8F400A188FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitCore iOS";
-			targetProxy = 2243DE8B1E87F8F400A188FD /* PBXContainerItemProxy */;
-		};
-		22B143B11E893AF3005A35B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitMIP macOS";
-			targetProxy = 22B143B01E893AF3005A35B9 /* PBXContainerItemProxy */;
-		};
-		22B143B31E893AFC005A35B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitMIP iOS";
-			targetProxy = 22B143B21E893AFC005A35B9 /* PBXContainerItemProxy */;
-		};
-		22B144311E893DEA005A35B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitSecurity macOS";
-			targetProxy = 22B144301E893DEA005A35B9 /* PBXContainerItemProxy */;
-		};
-		22B144331E893DEF005A35B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitSecurity iOS";
-			targetProxy = 22B144321E893DEF005A35B9 /* PBXContainerItemProxy */;
-		};
-		22CA1EF91E88322C0091CB87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitDomain macOS";
-			targetProxy = 22CA1EF81E88322C0091CB87 /* PBXContainerItemProxy */;
-		};
-		22CA1EFB1E8832310091CB87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MedKitDomain iOS";
-			targetProxy = 22CA1EFA1E8832310091CB87 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -912,7 +828,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -976,7 +892,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1009,11 +925,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 45;
+				DYLIB_CURRENT_VERSION = 46;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1037,11 +953,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 45;
+				DYLIB_CURRENT_VERSION = 46;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1090,11 +1006,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 45;
+				DYLIB_CURRENT_VERSION = 46;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "MedKit MacOS/Info.plist";
@@ -1115,11 +1031,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 45;
+				DYLIB_CURRENT_VERSION = 46;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "MedKit MacOS/Info.plist";

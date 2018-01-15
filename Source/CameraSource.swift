@@ -20,25 +20,11 @@
 
 
 import Foundation
-import MedKitCore
-import MedKitMIP
-import SecurityKitAOS
 
 
 /**
- Initialize MedKit module.
- 
- - Parameters:
-    - service:  Keychain service identifier.
-    - keychain: Keychain instance.
  */
-public func initialize(keychain: SecKeychain? = nil)
-{
-    SecurityKitAOS.initialize(keychain: keychain)
-    
-    for deviceProtocol in MedKitMIP.deviceProtocols {
-        ProtocolPluginManager.shared.registerProtocol(deviceProtocol)
-    }
+public protocol CameraSource: class {
     
 }
 

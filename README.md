@@ -6,10 +6,10 @@
 MedKit is an open source framework facilitating secure, bi-directional
 communication with medical devices.
 
-The MedKit module is one of a number of modules which include: MedKitCore,
-MedKitDomain, MedKitMIP, SecurityKitAOS and SecurityKit.  This module is primarily a
-wrapper for the MedKitCore and MedKitDomain modules, exporting only those interfaces
-that comprise the MedKit client API.
+The MedKit module is one of a number of modules which include: MedKitAssignedNumbers,
+MedKitCore, MedKitDomain, MedKitMIP, SecurityKitAOS and SecurityKit.  This module is
+primarily a wrapper for the MedKitCore and MedKitDomain modules, exporting only those
+interfaces that comprise the MedKit client API.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ that comprise the MedKit client API.
 ### macOS
 
 * macOS 10.12 or higher
-* Xcode 9.0 beta 2 (9M137d) or higher
+* Xcode 9.0 or higher
 
 ## Dependencies
 
@@ -37,7 +37,7 @@ intent is to eventually support multiple platforms.
 
 ## License
 
-Copyright 2016-2017 Jon Griffeth
+Copyright 2016-2018 Jon Griffeth
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use these files except in compliance with the License.

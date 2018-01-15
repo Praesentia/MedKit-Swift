@@ -20,25 +20,15 @@
 
 
 import Foundation
-import MedKitCore
-import MedKitMIP
-import SecurityKitAOS
 
 
 /**
- Initialize MedKit module.
- 
- - Parameters:
-    - service:  Keychain service identifier.
-    - keychain: Keychain instance.
+ CameraController delegate.
  */
-public func initialize(keychain: SecKeychain? = nil)
-{
-    SecurityKitAOS.initialize(keychain: keychain)
+public protocol CameraControllerDelegate: class {
     
-    for deviceProtocol in MedKitMIP.deviceProtocols {
-        ProtocolPluginManager.shared.registerProtocol(deviceProtocol)
-    }
+    func cameraControllerDidStart(_ controller: CameraController)
+    func cameraController(_ controller: CameraController, didStopForReason reason: Error?)
     
 }
 

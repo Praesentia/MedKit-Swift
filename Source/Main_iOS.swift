@@ -2,7 +2,7 @@
  -----------------------------------------------------------------------------
  This source file is part of MedKit.
  
- Copyright 2017 Jon Griffeth
+ Copyright 2017-2018 Jon Griffeth
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ public func initialize()
     SecurityKitAOS.initialize()
     
     for deviceProtocol in MedKitMIP.deviceProtocols {
-        DeviceProtocols.main.registerProtocol(deviceProtocol)
+        ProtocolPluginManager.shared.registerProtocol(deviceProtocol)
     }
 }
 

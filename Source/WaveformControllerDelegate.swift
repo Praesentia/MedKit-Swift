@@ -20,25 +20,32 @@
 
 
 import Foundation
-import MedKitCore
-import MedKitMIP
-import SecurityKitAOS
 
 
 /**
- Initialize MedKit module.
- 
- - Parameters:
-    - service:  Keychain service identifier.
-    - keychain: Keychain instance.
+ WaveformController delegate.
  */
-public func initialize(keychain: SecKeychain? = nil)
-{
-    SecurityKitAOS.initialize(keychain: keychain)
+public protocol WaveformControllerDelegate: class {
     
-    for deviceProtocol in MedKitMIP.deviceProtocols {
-        ProtocolPluginManager.shared.registerProtocol(deviceProtocol)
-    }
+    /**
+     Waveform controller did start.
+     
+     This method is called in response to ...
+     */
+    func waveformControllerDidStart(_ waveformController: WaveformController)
+
+    /**
+     Waveform controller did stop.
+     
+     This method is called in response to waveform capture being interrupted
+     for any reason.
+     */
+    func waveformController(_ waveformController: WaveformController, didStopForReason reason: Error?)
+
+    /**
+     Waveform controller did update latency.
+     */
+    func waveformControllerDidUpdateLatency(_ waveformController: WaveformController)
     
 }
 

@@ -24,6 +24,8 @@ import Foundation
 
 open class ResourceController {
 
+    public internal(set) var enabled: Bool = false
+
     // MARK: - Properties
     public let resource: Resource
 

@@ -35,6 +35,7 @@ public class PatientController2: ResourceController, ResourceObserver {
 
     // MARK: - Private
     private typealias PatientProtocol = PatientProtocolV1
+    private typealias Method          = PatientProtocolV1.Method
     private typealias Notification    = PatientProtocolV1.Notification
 
     // MARK: - Initialiers
@@ -63,6 +64,52 @@ public class PatientController2: ResourceController, ResourceObserver {
         }
     }
 
+    // MARK: - Value Management
+
+    public func readValue(completionHandler completion: @escaping (Error?) -> Void)
+    {
+        let message = PatientProtocol.Method.ReadValue()
+
+        resource.call(message: message) { reply, error in
+
+            if error == nil, let reply = reply {
+                do {
+                    let update = try reply.decode(Method.ReadValue.Reply.self)
+
+                    self.patient      = update.value
+                    self.timeModified = update.time.timeInterval
+                }
+                catch {
+
+                }
+            }
+
+            completion(error)
+        }
+    }
+
+    public func writeValue(location: Value, completionHandler completion: @escaping (Error?) -> Void)
+    {
+        let message = PatientProtocol.Method.WriteValue(args: location)
+
+        resource.call(message: message) { reply, error in
+
+            if error == nil, let reply = reply {
+                do {
+                    let update = try reply.decode(Method.WriteValue.Reply.self)
+
+                    self.patient      = update.value
+                    self.timeModified = update.time.timeInterval
+                }
+                catch {
+
+                }
+            }
+
+            completion(error)
+        }
+    }
+
     // MARK: - ResourceObserver
 
     /**
@@ -80,7 +127,11 @@ public class PatientController2: ResourceController, ResourceObserver {
 
             switch type {
             case .didUpdate :
-                patient = try container.decode(Notification.DidUpdate.Args.self, forKey: .args)
+                let update = try container.decode(Notification.DidUpdate.Args.self, forKey: .args)
+
+                patient      = update.value
+                timeModified = update.time.timeInterval
+
                 delegate?.patientControllerDidUpdate(self)
             }
         }

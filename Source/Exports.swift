@@ -52,7 +52,6 @@ import Foundation
 @_exported import protocol MedKitCore.ServiceObserver
 @_exported import class    MedKitCore.ServiceType
 @_exported import class    MedKitCore.Sync
-@_exported import class    MedKitCore.UnitType
 
 // MARK: - MedKitDomain
 @_exported import protocol MedKitDomain.Account
@@ -67,6 +66,9 @@ import Foundation
 
 // MARK: - MedKitAssignedNumbers
 @_exported import          MedKitAssignedNumbers
+
+public typealias Image = ImageV1
+public typealias Name  = NameV1
 
 
 // End of File

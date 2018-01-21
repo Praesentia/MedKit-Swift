@@ -30,9 +30,9 @@ public class WaveformReader: ResourceObserver {
 
     // MARK: - Private
     private typealias WaveformProtocol = WaveformProtocolV1
-    private typealias Notification     = WaveformProtocol.Notification
+    private typealias Notification     = WaveformProtocolV1.Notification
 
-    private var       count: Int = 0
+    private var enabledCount: Int = 0
 
     // MARK: - Initialiers
     
@@ -63,10 +63,10 @@ public class WaveformReader: ResourceObserver {
     {
         let sync = Sync()
         
-        assert(count >= 0)
+        assert(enabledCount >= 0)
         
-        count += 1
-        if count == 1 {
+        enabledCount += 1
+        if enabledCount == 1 {
             sync.incr()
             resource.addObserver(self) { error in
                 sync.decr(error)
@@ -83,10 +83,10 @@ public class WaveformReader: ResourceObserver {
     {
         let sync = Sync()
         
-        assert(count > 0)
+        assert(enabledCount > 0)
         
-        count -= 1
-        if count == 0 { // TODO: race?
+        enabledCount -= 1
+        if enabledCount == 0 { // TODO: race?
             sync.incr()
             resource.removeObserver(self) { error in
                 sync.decr(error)

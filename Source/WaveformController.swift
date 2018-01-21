@@ -58,7 +58,8 @@ public class WaveformController: ResourceController {
             sync.incr()
             reader.start() { error in
                 if error == nil {
-                    self.reader = reader
+                    self.enabled = true
+                    self.reader  = reader
                 }
                 sync.decr(error)
             }
@@ -82,7 +83,8 @@ public class WaveformController: ResourceController {
         if let reader = self.reader {
             reader.stop() { error in
                 if error == nil {
-                    self.reader = nil
+                    self.enabled = false
+                    self.reader  = nil
                 }
                 self.stopped(for: error)
             }

@@ -24,16 +24,16 @@ import Foundation
 
 public class LocationController: ResourceController, ResourceObserver {
 
+    public typealias Value = LocationProtocolV1.Value
+
     // MARK: - Properties
-    public weak var delegate    : LocationControllerDelegate?
-    public var      description : String?            { return location?.description }
-    public var      details     : LocationDetailsV1? { return location?.details}
+    public weak var         delegate     : LocationControllerDelegate?
+    public private(set) var location     : Value
+    public private(set) var timeModified : TimeInterval
 
     // MARK: - Private
     private typealias LocationProtocol = LocationProtocolV1
-    private typealias Notification     = LocationProtocol.Notification
-
-    private var location: LocationProtocol.Value?
+    private typealias Notification     = LocationProtocolV1.Notification
 
     // MARK: - Initialiers
 
@@ -42,6 +42,9 @@ public class LocationController: ResourceController, ResourceObserver {
      */
     override public init(for resource: Resource)
     {
+        location     = Value()
+        timeModified = 0
+
         super.init(for: resource)
     }
 
@@ -58,6 +61,52 @@ public class LocationController: ResourceController, ResourceObserver {
     {
         resource.removeObserver(self) { error in
             self.delegate?.locationController(self, didStopForReason: error)
+        }
+    }
+
+    // MARK: - Value Management
+
+    public func readValue(completionHandler completion: @escaping (Error?) -> Void)
+    {
+        let message = LocationProtocol.Method.ReadValue()
+
+        resource.call(message: message) { reply, error in
+
+            if error == nil, let reply = reply {
+                do {
+                    let update = try reply.decode(LocationProtocol.Method.ReadValue.Reply.self)
+
+                    self.location     = update.value
+                    self.timeModified = update.time.timeInterval
+                }
+                catch {
+
+                }
+            }
+
+            completion(error)
+        }
+    }
+
+    public func writeValue(location: Value, completionHandler completion: @escaping (Error?) -> Void)
+    {
+        let message = LocationProtocol.Method.WriteValue(args: location)
+
+        resource.call(message: message) { reply, error in
+
+            if error == nil, let reply = reply {
+                do {
+                    let update = try reply.decode(LocationProtocol.Method.WriteValue.Reply.self)
+
+                    self.location     = update.value
+                    self.timeModified = update.time.timeInterval
+                }
+                catch {
+
+                }
+            }
+
+            completion(error)
         }
     }
 
@@ -78,7 +127,11 @@ public class LocationController: ResourceController, ResourceObserver {
 
             switch type {
             case .didUpdate :
-                location = try container.decode(Notification.DidUpdate.Args.self, forKey: .args)
+                let update = try container.decode(Notification.DidUpdate.Args.self, forKey: .args)
+
+                location     = update.value
+                timeModified = update.time.timeInterval
+
                 delegate?.locationControllerDidUpdate(self)
             }
         }

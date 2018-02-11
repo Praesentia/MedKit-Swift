@@ -20,6 +20,7 @@
 
 
 import Foundation
+import MedKitAssignedNumbers
 
 
 /**
@@ -27,53 +28,56 @@ import Foundation
  */
 public class WaveformStream: WaveformSource {
     
-    // MARK: - Types
-    public typealias Index = WaveformSource.Index
-    
     // MARK: - Properties
-    public private(set) var channel    = [Float]()
+    public private(set) var channel    = [Sample]()
     public private(set) var history    : TimeInterval = 30
-    public private(set) var latency    : TimeInterval = 0
-    public var              min        : Float?       { calcMinMax(); return _min }
-    public var              max        : Float?       { calcMinMax(); return _max }
+    public var              latency    : TimeInterval { return latencyManager.value }
+    public var              min        : Sample?      { calcMinMax(); return _min }
+    public var              max        : Sample?      { calcMinMax(); return _max }
     public private(set) var offset     : Index = 0
-    public private(set) var resolution : Float = 250
-    public private(set) var units      : UnitType = UnitType() // TODO
+    public private(set) var resolution : Index
+    public private(set) var units      : UnitType
     
-    // MARK: - Shadowed Properties
-    private var _min     : Float?
-    private var _max     : Float?
+    // MARK: - Shadowed
+    private var _min : Sample?
+    private var _max : Sample?
     
-    // MARK: - Private Properties
-    private var capacity : Int
-    private var stale    : Bool  = true
+    // MARK: - Private
+    private var capacity       : Int
+    private var stale          : Bool = true
+    private let latencyManager : Latency
+
+    // MARK: - Initializers
     
     /**
      Initialize instance.
      */
-    public init()
+    public init(resolution: Index, units: UnitType, latency: Latency = Latency())
     {
-        capacity = Int(history * TimeInterval(resolution))
+        self.capacity       = Int(history * TimeInterval(resolution))
+        self.resolution     = resolution
+        self.units          = units
+        self.latencyManager = latency
     }
     
     /**
      Append data.
      */
-    public func append(data segment: [Float], at index: Int64)
+    public func append(segment: WaveformInterval)
     {
-        updateLatency(for: TimeInterval(index) / TimeInterval(resolution))
+        latencyManager.update(for: segment.index.timeInterval(resolution: resolution))
         
         if channel.isEmpty {
-            offset = index
+            offset = segment.index
         }
         
-        if index != end {
-            debugPrint("discontinuity \(index - end)") // TODO
-            channel = [Float]()
-            offset  = index
+        if segment.index != end {
+            debugPrint("discontinuity \(segment.index - end)") // TODO
+            channel = [Sample]()
+            offset  = segment.index
         }
         
-        channel += segment
+        channel += segment.samples
         stale    = true
         
         if channel.count > capacity {
@@ -83,18 +87,12 @@ public class WaveformStream: WaveformSource {
             offset += Int64(n)
         }
     }
-    
+
+    // MARK: - Private
+
     /**
-     Update latency.
+     Calculate min/max values.
      */
-    private func updateLatency(for time: TimeInterval)
-    {
-        let now     = Date.timeIntervalSinceReferenceDate
-        let latency = now - time
-        
-        self.latency = latency
-    }
-    
     private func calcMinMax()
     {
         if stale {

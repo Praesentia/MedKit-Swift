@@ -119,7 +119,7 @@ public class LocationController: ResourceController, ResourceObserver {
         - resource:
         - decoder:
      */
-    public func resource(_ resource: Resource, didNotifyWith notification: AnyCodable)
+    public func resource(_ resource: Resource, didNotify notification: AnyCodable)
     {
         do {
             let container = try notification.decoder.container(keyedBy: Notification.CodingKeys.self)

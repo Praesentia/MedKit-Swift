@@ -18,8 +18,9 @@
  -----------------------------------------------------------------------------
  */
  
- 
+
 import Foundation
+import MedKitAssignedNumbers
 
 
 /**
@@ -27,14 +28,15 @@ import Foundation
  */
 public protocol WaveformSource: class {
     
-    typealias Index = WaveformIndex
+    typealias Index  = WaveformIndexV1
+    typealias Sample = Float
     
     /**
      A queue of cached waveform data.  New data is append to the end of the
      queue.  Earlier data, that has exceeded the retention time (see history),
      is dropped from the head of the queue.
      */
-    var channel: [Float] { get }
+    var channel: [Sample] { get }
     
     /**
      Amount of data that will be retained in the channel, as a measure of time.
@@ -47,8 +49,8 @@ public protocol WaveformSource: class {
      */
     var latency: TimeInterval { get }
     
-    var min: Float? { get }
-    var max: Float? { get }
+    var min: Sample? { get }
+    var max: Sample? { get }
     
     /**
      This value represents the time index for the first data element in the
@@ -61,7 +63,7 @@ public protocol WaveformSource: class {
      The number of data points per seconds.  This value will not change once
      established by the data source.
      */
-    var resolution: Float { get }
+    var resolution: Index { get }
 
     var units : UnitType { get }
     
@@ -70,7 +72,7 @@ public protocol WaveformSource: class {
 public extension WaveformSource {
     
     public var count   : Int   { return channel.count }
-    public var end     : Index { return offset + Int64(channel.count) }
+    public var end     : Index { return offset + Index(channel.count) }
     public var isEmpty : Bool  { return channel.isEmpty }
     
     public func inBounds(_ index: Index) -> Bool { return index >= offset && index < end }
@@ -83,7 +85,7 @@ public extension WaveformSource {
     /**
      Value at index.
      */
-    public func value(at index: Index) -> Float?
+    public func value(at index: Index) -> Sample?
     {
         return inBounds(index) ? channel[Int(index - offset)] : nil
     }

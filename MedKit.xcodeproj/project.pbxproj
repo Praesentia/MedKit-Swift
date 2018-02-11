@@ -10,6 +10,13 @@
 		220445561D84D3BB001934CD /* MedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204454C1D84D3BB001934CD /* MedKit.framework */; };
 		2204455B1D84D3BB001934CD /* MedKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2204455A1D84D3BB001934CD /* MedKitTests.swift */; };
 		2204455D1D84D3BB001934CD /* MedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204454F1D84D3BB001934CD /* MedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		220B7FA1201B50140030634A /* CameraReaderCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B7FA0201B50140030634A /* CameraReaderCache.swift */; };
+		220B7FA3201B50870030634A /* CameraReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B7FA2201B50870030634A /* CameraReader.swift */; };
+		220B7FA5201B50E70030634A /* CameraStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B7FA4201B50E70030634A /* CameraStream.swift */; };
+		220B7FA6201B527B0030634A /* CameraReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B7FA2201B50870030634A /* CameraReader.swift */; };
+		220B7FA7201B527F0030634A /* CameraSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FB61C1FA611E90008C944 /* CameraSource.swift */; };
+		220B7FA8201B52820030634A /* CameraReaderCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B7FA0201B50140030634A /* CameraReaderCache.swift */; };
+		220B7FA9201B52850030634A /* CameraStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B7FA4201B50E70030634A /* CameraStream.swift */; };
 		2239711C1E2E5511000B6B65 /* MedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223971131E2E5511000B6B65 /* MedKit.framework */; };
 		223971211E2E5511000B6B65 /* MedKit_MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223971201E2E5511000B6B65 /* MedKit_MacOSTests.swift */; };
 		223971231E2E5511000B6B65 /* MedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 223971151E2E5511000B6B65 /* MedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +30,8 @@
 		2248B5541FA61B1E00F064A7 /* MedKitAssignedNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2248B5531FA61AC100F064A7 /* MedKitAssignedNumbers.framework */; };
 		2248B5551FA61B3000F064A7 /* MedKitAssignedNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2248B5531FA61AC100F064A7 /* MedKitAssignedNumbers.framework */; };
 		2276C5D01EF847370030352C /* Main_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276C5CE1EF847110030352C /* Main_macOS.swift */; };
+		229F81E42020942300B1D6AD /* Latency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F81E32020942300B1D6AD /* Latency.swift */; };
+		229F81E52020942300B1D6AD /* Latency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F81E32020942300B1D6AD /* Latency.swift */; };
 		22B143991E893980005A35B9 /* Main_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B143981E893980005A35B9 /* Main_iOS.swift */; };
 		22B143AE1E893AAA005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143A71E893A89005A35B9 /* MedKitMIP.framework */; };
 		22B143AF1E893AAF005A35B9 /* MedKitMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B143AB1E893A89005A35B9 /* MedKitMIP.framework */; };
@@ -51,7 +60,7 @@
 		22FB7EF31FA609290090668C /* WaveformControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EE91FA609280090668C /* WaveformControllerDelegate.swift */; };
 		22FB7EF41FA609290090668C /* WaveformStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EEA1FA609290090668C /* WaveformStream.swift */; };
 		22FB7EF61FA609290090668C /* WaveformSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EEC1FA609290090668C /* WaveformSource.swift */; };
-		22FB7EF71FA609290090668C /* WaveformStreamCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EED1FA609290090668C /* WaveformStreamCache.swift */; };
+		22FB7EF71FA609290090668C /* WaveformReaderCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EED1FA609290090668C /* WaveformReaderCache.swift */; };
 		22FB7EF81FA609290090668C /* WaveformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EEE1FA609290090668C /* WaveformController.swift */; };
 		22FB7EFA1FA609290090668C /* WaveformReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EF01FA609290090668C /* WaveformReader.swift */; };
 		22FB7EFE1FA6092E0090668C /* WaveformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EEE1FA609290090668C /* WaveformController.swift */; };
@@ -59,7 +68,7 @@
 		22FB7F031FA6092E0090668C /* WaveformReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EF01FA609290090668C /* WaveformReader.swift */; };
 		22FB7F041FA6092E0090668C /* WaveformSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EEC1FA609290090668C /* WaveformSource.swift */; };
 		22FB7F051FA6092E0090668C /* WaveformStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EEA1FA609290090668C /* WaveformStream.swift */; };
-		22FB7F061FA6092E0090668C /* WaveformStreamCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EED1FA609290090668C /* WaveformStreamCache.swift */; };
+		22FB7F061FA6092E0090668C /* WaveformReaderCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7EED1FA609290090668C /* WaveformReaderCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +198,20 @@
 			remoteGlobalIDString = 22CA1FBE1E883B5B0091CB87;
 			remoteInfo = "MedKitMIP macOSTests";
 		};
+		22BD2F6F20279DE4009F6A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2248B54B1FA61AC100F064A7 /* MedKitAssignedNumbers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22BD2F1C20274E2D009F6A9F;
+			remoteInfo = "MedKitAssignedNumbers iOSTests";
+		};
+		22BD2F7120279DE4009F6A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2248B54B1FA61AC100F064A7 /* MedKitAssignedNumbers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22BD2F2D20274E4D009F6A9F;
+			remoteInfo = "MedKitAssignedNumbers macOSTests";
+		};
 		22CA1EEE1E8832020091CB87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */;
@@ -291,6 +314,9 @@
 		2204455C1D84D3BB001934CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		220A343A1EBE176E0024DF9E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = SOURCE_ROOT; };
 		220A34441EBF42950024DF9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		220B7FA0201B50140030634A /* CameraReaderCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraReaderCache.swift; sourceTree = "<group>"; };
+		220B7FA2201B50870030634A /* CameraReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraReader.swift; sourceTree = "<group>"; };
+		220B7FA4201B50E70030634A /* CameraStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStream.swift; sourceTree = "<group>"; };
 		223971131E2E5511000B6B65 /* MedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223971151E2E5511000B6B65 /* MedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MedKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		223971161E2E5511000B6B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -305,6 +331,7 @@
 		2248B54B1FA61AC100F064A7 /* MedKitAssignedNumbers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitAssignedNumbers.xcodeproj; path = ../MedKitAssignedNumbers/MedKitAssignedNumbers.xcodeproj; sourceTree = "<group>"; };
 		225A46911EB37E8D004EE389 /* Release Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "Release Notes.rtf"; path = "Documentation/Release Notes.rtf"; sourceTree = SOURCE_ROOT; };
 		2276C5CE1EF847110030352C /* Main_macOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main_macOS.swift; path = Source/Main_macOS.swift; sourceTree = SOURCE_ROOT; };
+		229F81E32020942300B1D6AD /* Latency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latency.swift; sourceTree = "<group>"; };
 		22B143981E893980005A35B9 /* Main_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main_iOS.swift; path = Source/Main_iOS.swift; sourceTree = SOURCE_ROOT; };
 		22B1439F1E893A89005A35B9 /* MedKitMIP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitMIP.xcodeproj; path = ../MedKitMIP-Swift/MedKitMIP.xcodeproj; sourceTree = "<group>"; };
 		22CA1EE71E8832020091CB87 /* MedKitDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedKitDomain.xcodeproj; path = ../MedKitDomain-Swift/MedKitDomain.xcodeproj; sourceTree = "<group>"; };
@@ -321,7 +348,7 @@
 		22FB7EE91FA609280090668C /* WaveformControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformControllerDelegate.swift; path = Source/WaveformControllerDelegate.swift; sourceTree = SOURCE_ROOT; };
 		22FB7EEA1FA609290090668C /* WaveformStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformStream.swift; path = Source/WaveformStream.swift; sourceTree = SOURCE_ROOT; };
 		22FB7EEC1FA609290090668C /* WaveformSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformSource.swift; path = Source/WaveformSource.swift; sourceTree = SOURCE_ROOT; };
-		22FB7EED1FA609290090668C /* WaveformStreamCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformStreamCache.swift; path = Source/WaveformStreamCache.swift; sourceTree = SOURCE_ROOT; };
+		22FB7EED1FA609290090668C /* WaveformReaderCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformReaderCache.swift; path = Source/WaveformReaderCache.swift; sourceTree = SOURCE_ROOT; };
 		22FB7EEE1FA609290090668C /* WaveformController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformController.swift; path = Source/WaveformController.swift; sourceTree = SOURCE_ROOT; };
 		22FB7EF01FA609290090668C /* WaveformReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaveformReader.swift; path = Source/WaveformReader.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -380,6 +407,7 @@
 				22D7712A1F6DA5F900CF3015 /* SecurityKitAOS.xcodeproj */,
 				225A46841EB37E7E004EE389 /* Documentation */,
 				223971C91E2E5AEA000B6B65 /* Source */,
+				22BD2EF22025FC69009F6A9F /* Tests */,
 				2204454E1D84D3BB001934CD /* MedKit iOS */,
 				220445591D84D3BB001934CD /* MedKit iOSTests */,
 				223971141E2E5511000B6B65 /* MedKit macOS */,
@@ -420,6 +448,20 @@
 			path = MedKitTests;
 			sourceTree = "<group>";
 		};
+		220B7F8E201B4C1E0030634A /* Resource Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22E8E8DE1FDC769800FB937F /* ResourceController.swift */,
+				22E8E8631FD971D800FB937F /* BloodPressure */,
+				223FB6031FA611D70008C944 /* Camera */,
+				22E8E88D1FDAAA1F00FB937F /* Location */,
+				22E8E85F1FD96A9400FB937F /* Measurement */,
+				22E8E8A51FDAACC600FB937F /* Patient */,
+				22FB7EE81FA609080090668C /* Waveform */,
+			);
+			name = "Resource Controllers";
+			sourceTree = "<group>";
+		};
 		223971141E2E5511000B6B65 /* MedKit macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,13 +486,8 @@
 			isa = PBXGroup;
 			children = (
 				2243DE811E87F7E000A188FD /* Exports.swift */,
-				22E8E8DE1FDC769800FB937F /* ResourceController.swift */,
-				22E8E8631FD971D800FB937F /* BloodPressure */,
-				223FB6031FA611D70008C944 /* Camera */,
-				22E8E88D1FDAAA1F00FB937F /* Location */,
-				22E8E85F1FD96A9400FB937F /* Measurement */,
-				22E8E8A51FDAACC600FB937F /* Patient */,
-				22FB7EE81FA609080090668C /* Waveform */,
+				220B7F8E201B4C1E0030634A /* Resource Controllers */,
+				229F81F72020942B00B1D6AD /* Miscellaneous */,
 				22FB7F091FA60A720090668C /* iOS */,
 				22FB7F0A1FA60A7E0090668C /* macOS */,
 			);
@@ -462,7 +499,10 @@
 			children = (
 				223FB61D1FA611E90008C944 /* CameraController.swift */,
 				223FB6191FA611E80008C944 /* CameraControllerDelegate.swift */,
+				220B7FA2201B50870030634A /* CameraReader.swift */,
+				220B7FA0201B50140030634A /* CameraReaderCache.swift */,
 				223FB61C1FA611E90008C944 /* CameraSource.swift */,
+				220B7FA4201B50E70030634A /* CameraStream.swift */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
@@ -471,8 +511,8 @@
 			isa = PBXGroup;
 			children = (
 				2243DE7A1E87F7CC00A188FD /* MedKitCore.framework */,
-				2243DE7C1E87F7CC00A188FD /* MedKitCore iOSTests.xctest */,
 				2243DE7E1E87F7CC00A188FD /* MedKitCore.framework */,
+				2243DE7C1E87F7CC00A188FD /* MedKitCore iOSTests.xctest */,
 				2243DE801E87F7CC00A188FD /* MedKitCore macOSTests.xctest */,
 			);
 			name = Products;
@@ -483,6 +523,8 @@
 			children = (
 				2248B5511FA61AC100F064A7 /* MedKitAssignedNumbers.framework */,
 				2248B5531FA61AC100F064A7 /* MedKitAssignedNumbers.framework */,
+				22BD2F7020279DE4009F6A9F /* MedKitAssignedNumbers iOSTests.xctest */,
+				22BD2F7220279DE4009F6A9F /* MedKitAssignedNumbers macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -497,23 +539,38 @@
 			path = Documentation;
 			sourceTree = "<group>";
 		};
+		229F81F72020942B00B1D6AD /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				229F81E32020942300B1D6AD /* Latency.swift */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
 		22B143A01E893A89005A35B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				22B143A71E893A89005A35B9 /* MedKitMIP.framework */,
-				22B143A91E893A89005A35B9 /* MedKitMIP iOSTests.xctest */,
 				22B143AB1E893A89005A35B9 /* MedKitMIP.framework */,
+				22B143A91E893A89005A35B9 /* MedKitMIP iOSTests.xctest */,
 				22B143AD1E893A89005A35B9 /* MedKitMIP macOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		22BD2EF22025FC69009F6A9F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		22CA1EE81E8832020091CB87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */,
-				22CA1EF11E8832020091CB87 /* MedKitDomain iOSTests.xctest */,
 				22CA1EF31E8832020091CB87 /* MedKitDomain.framework */,
+				22CA1EF11E8832020091CB87 /* MedKitDomain iOSTests.xctest */,
 				22CA1EF51E8832020091CB87 /* MedKitDomain macOSTests.xctest */,
 			);
 			name = Products;
@@ -523,13 +580,13 @@
 			isa = PBXGroup;
 			children = (
 				22D771371F6DA5F900CF3015 /* SecurityKitAOS.framework */,
-				22D771391F6DA5F900CF3015 /* SecurityKitAOS iOSTests.xctest */,
-				22D7713B1F6DA5F900CF3015 /* SecurityKitAOS iOSTestApp.app */,
 				22D7713D1F6DA5F900CF3015 /* SecurityKitAOS.framework */,
-				22D7713F1F6DA5F900CF3015 /* SecurityKitAOS macOSTests.xctest */,
 				22D771411F6DA5F900CF3015 /* CommonCrypto.framework */,
-				22D771431F6DA5F900CF3015 /* CommonCrypto iOSTests.xctest */,
 				22D771451F6DA5F900CF3015 /* CommonCrypto.framework */,
+				22D7713B1F6DA5F900CF3015 /* SecurityKitAOS iOSTestApp.app */,
+				22D771391F6DA5F900CF3015 /* SecurityKitAOS iOSTests.xctest */,
+				22D7713F1F6DA5F900CF3015 /* SecurityKitAOS macOSTests.xctest */,
+				22D771431F6DA5F900CF3015 /* CommonCrypto iOSTests.xctest */,
 				22D771471F6DA5F900CF3015 /* CommonCrypto macOSTests.xctest */,
 			);
 			name = Products;
@@ -584,9 +641,9 @@
 				22FB7EEE1FA609290090668C /* WaveformController.swift */,
 				22FB7EE91FA609280090668C /* WaveformControllerDelegate.swift */,
 				22FB7EF01FA609290090668C /* WaveformReader.swift */,
+				22FB7EED1FA609290090668C /* WaveformReaderCache.swift */,
 				22FB7EEC1FA609290090668C /* WaveformSource.swift */,
 				22FB7EEA1FA609290090668C /* WaveformStream.swift */,
-				22FB7EED1FA609290090668C /* WaveformStreamCache.swift */,
 			);
 			name = Waveform;
 			sourceTree = "<group>";
@@ -714,7 +771,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Jon Griffeth";
 				TargetAttributes = {
 					2204454B1D84D3BB001934CD = {
@@ -724,6 +781,7 @@
 					};
 					220445541D84D3BB001934CD = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					223971121E2E5511000B6B65 = {
@@ -733,6 +791,7 @@
 					};
 					2239711A1E2E5511000B6B65 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -773,8 +832,8 @@
 			projectRoot = "";
 			targets = (
 				2204454B1D84D3BB001934CD /* MedKit iOS */,
-				220445541D84D3BB001934CD /* MedKit iOSTests */,
 				223971121E2E5511000B6B65 /* MedKit macOS */,
+				220445541D84D3BB001934CD /* MedKit iOSTests */,
 				2239711A1E2E5511000B6B65 /* MedKit macOSTests */,
 			);
 		};
@@ -849,6 +908,20 @@
 			fileType = wrapper.cfbundle;
 			path = "MedKitMIP macOSTests.xctest";
 			remoteRef = 22B143AC1E893A89005A35B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22BD2F7020279DE4009F6A9F /* MedKitAssignedNumbers iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitAssignedNumbers iOSTests.xctest";
+			remoteRef = 22BD2F6F20279DE4009F6A9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22BD2F7220279DE4009F6A9F /* MedKitAssignedNumbers macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MedKitAssignedNumbers macOSTests.xctest";
+			remoteRef = 22BD2F7120279DE4009F6A9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		22CA1EEF1E8832020091CB87 /* MedKitDomain.framework */ = {
@@ -981,23 +1054,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E8E8A01FDAAA3F00FB937F /* LocationController.swift in Sources */,
+				220B7FA3201B50870030634A /* CameraReader.swift in Sources */,
 				22FB7EF41FA609290090668C /* WaveformStream.swift in Sources */,
 				22FB7EF61FA609290090668C /* WaveformSource.swift in Sources */,
 				223FB61E1FA611E90008C944 /* CameraControllerDelegate.swift in Sources */,
 				22E8E8AA1FDAACF900FB937F /* PatientControllerDelegate.swift in Sources */,
 				22E8E8651FD971F200FB937F /* BloodPressureController.swift in Sources */,
 				22E8E8DF1FDC769800FB937F /* ResourceController.swift in Sources */,
+				229F81E42020942300B1D6AD /* Latency.swift in Sources */,
 				22FB7EF81FA609290090668C /* WaveformController.swift in Sources */,
 				22FB7EFA1FA609290090668C /* WaveformReader.swift in Sources */,
 				22E8E8A71FDAACD700FB937F /* PatientController.swift in Sources */,
+				220B7FA1201B50140030634A /* CameraReaderCache.swift in Sources */,
 				223FB6221FA611E90008C944 /* CameraController.swift in Sources */,
-				22FB7EF71FA609290090668C /* WaveformStreamCache.swift in Sources */,
+				22FB7EF71FA609290090668C /* WaveformReaderCache.swift in Sources */,
 				22B143991E893980005A35B9 /* Main_iOS.swift in Sources */,
 				22E8E84C1FD96A9000FB937F /* MeasurementController.swift in Sources */,
 				223FB6211FA611E90008C944 /* CameraSource.swift in Sources */,
 				22FB7EF31FA609290090668C /* WaveformControllerDelegate.swift in Sources */,
 				22E8E8A31FDAAA7E00FB937F /* LocationControllerDelegate.swift in Sources */,
 				22E8E8611FD96AC000FB937F /* MeasurementControllerDelegate.swift in Sources */,
+				220B7FA5201B50E70030634A /* CameraStream.swift in Sources */,
 				22E8E8681FD9721A00FB937F /* BloodPressureControllerDelegate.swift in Sources */,
 				2243DE821E87F7E000A188FD /* Exports.swift in Sources */,
 			);
@@ -1015,22 +1092,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229F81E52020942300B1D6AD /* Latency.swift in Sources */,
 				22E8E8661FD971F200FB937F /* BloodPressureController.swift in Sources */,
+				220B7FA9201B52850030634A /* CameraStream.swift in Sources */,
 				22E8E8621FD96AC000FB937F /* MeasurementControllerDelegate.swift in Sources */,
 				22FB7F041FA6092E0090668C /* WaveformSource.swift in Sources */,
 				22FB7F051FA6092E0090668C /* WaveformStream.swift in Sources */,
 				22FB7F031FA6092E0090668C /* WaveformReader.swift in Sources */,
 				22E8E8AB1FDAACF900FB937F /* PatientControllerDelegate.swift in Sources */,
 				22E8E8A41FDAAA7E00FB937F /* LocationControllerDelegate.swift in Sources */,
+				220B7FA8201B52820030634A /* CameraReaderCache.swift in Sources */,
 				22E8E8E01FDC769800FB937F /* ResourceController.swift in Sources */,
 				22FB7EFF1FA6092E0090668C /* WaveformControllerDelegate.swift in Sources */,
 				2276C5D01EF847370030352C /* Main_macOS.swift in Sources */,
 				22E8E8691FD9721A00FB937F /* BloodPressureControllerDelegate.swift in Sources */,
 				22E8E84D1FD96A9000FB937F /* MeasurementController.swift in Sources */,
 				22E8E8A81FDAACD700FB937F /* PatientController.swift in Sources */,
-				22FB7F061FA6092E0090668C /* WaveformStreamCache.swift in Sources */,
+				22FB7F061FA6092E0090668C /* WaveformReaderCache.swift in Sources */,
 				2243DE9B1E87FB0200A188FD /* Exports.swift in Sources */,
+				220B7FA6201B527B0030634A /* CameraReader.swift in Sources */,
 				22E8E8A11FDAAA3F00FB937F /* LocationController.swift in Sources */,
+				220B7FA7201B527F0030634A /* CameraSource.swift in Sources */,
 				22FB7EFE1FA6092E0090668C /* WaveformController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1102,6 +1184,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1109,6 +1192,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1119,7 +1203,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 50;
+				CURRENT_PROJECT_VERSION = 52;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1166,6 +1250,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1173,6 +1258,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1183,7 +1269,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 50;
+				CURRENT_PROJECT_VERSION = 52;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1199,6 +1285,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INCLUDE_PATHS = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1216,11 +1303,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 50;
+				CURRENT_PROJECT_VERSION = 52;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 50;
+				DYLIB_CURRENT_VERSION = 52;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1234,7 +1321,7 @@
 				PRODUCT_NAME = MedKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1244,11 +1331,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 50;
+				CURRENT_PROJECT_VERSION = 52;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 50;
+				DYLIB_CURRENT_VERSION = 52;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1261,7 +1348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKit;
 				PRODUCT_NAME = MedKit;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1274,8 +1361,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1287,8 +1374,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Private.MedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1297,11 +1384,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 50;
+				CURRENT_PROJECT_VERSION = 52;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 50;
+				DYLIB_CURRENT_VERSION = 52;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "MedKit MacOS/Info.plist";
@@ -1312,7 +1399,7 @@
 				PRODUCT_NAME = MedKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1322,11 +1409,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 50;
+				CURRENT_PROJECT_VERSION = 52;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 50;
+				DYLIB_CURRENT_VERSION = 52;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "MedKit MacOS/Info.plist";
@@ -1337,7 +1424,7 @@
 				PRODUCT_NAME = MedKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1356,8 +1443,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1375,8 +1462,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

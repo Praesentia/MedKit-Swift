@@ -23,42 +23,20 @@ import Foundation
 
 
 /**
- Resource Controller
+ Latency Management
  */
-open class ResourceController {
+public class Latency {
 
-    // MARK: - Properties
+    public private(set) var value: TimeInterval = 0
 
-    /**
-     Enabled flag.
-     */
-    public internal(set) var enabled: Bool = false
-
-    /**
-     Resource reference.
-     */
-    public let resource: Resource
-
-    // MARK: - Initialiers
-
-    /**
-     Initialize instance.
-     */
-    public init(for resource: Resource)
+    public init()
     {
-        self.resource = resource
     }
 
-    // MARK: - Basic Controls
-
-    open func start()
+    public func update(for time: TimeInterval)
     {
-        fatalError()
-    }
-
-    open func stop()
-    {
-        fatalError()
+        let now = Date.timeIntervalSinceReferenceDate
+        value = now - time
     }
 
 }

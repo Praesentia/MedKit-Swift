@@ -54,7 +54,7 @@ public class WaveformController: ResourceController {
         
         let sync = Sync()
         
-        if let reader = WaveformStreamCache.main.findReader(for: resource) {
+        if let reader = instantiateReader() {
             sync.incr()
             reader.start() { error in
                 if error == nil {
@@ -92,6 +92,11 @@ public class WaveformController: ResourceController {
     }
     
     // MARK: - Private
+
+    private func instantiateReader() -> WaveformReader?
+    {
+        return WaveformReaderCache.shared.findReader(for: resource)
+    }
     
     private func started()
     {

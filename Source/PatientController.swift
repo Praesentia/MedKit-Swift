@@ -119,7 +119,7 @@ public class PatientController2: ResourceController, ResourceObserver {
         - resource:
         - notification:
      */
-    public func resource(_ resource: Resource, didNotifyWith notification: AnyCodable)
+    public func resource(_ resource: Resource, didNotify notification: AnyCodable)
     {
         do {
             let container = try notification.decoder.container(keyedBy: Notification.CodingKeys.self)

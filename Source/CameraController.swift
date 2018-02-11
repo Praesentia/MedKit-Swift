@@ -23,27 +23,18 @@ import Foundation
 
 
 /**
+ Camera Controller
+
  Placeholder
  */
-public class CameraController: ResourceController, ResourceObserver {
+public class CameraController: ResourceController {
     
     // MARK: - Properties
-    public weak var         delegate : CameraControllerDelegate?
-    public private(set) var source   : CameraSource?
+    public weak var  delegate : CameraControllerDelegate?
+    public var       source   : CameraSource? { return reader?.stream }
 
     // MARK: - Private
-    private enum NotificationKeys: CodingKey {
-        case method
-        case args
-    }
-
-    private enum Methods: Int, Codable {
-        case didUpdate = 1
-    }
-
-    private enum DidUpdateArgs: CodingKey {
-        case timeModified
-    }
+    private var reader : CameraReader?
     
     // MARK: Initializers
     
@@ -56,19 +47,62 @@ public class CameraController: ResourceController, ResourceObserver {
     
     override public func start()
     {
-        resource.addObserver(self) { error in
-            self.delegate?.cameraControllerDidStart(self)
+        guard(reader == nil) else { return }
+
+        let sync = Sync()
+
+        if let reader = instantiateReader() {
+            sync.incr()
+            reader.start() { error in
+                if error == nil {
+                    self.enabled = true
+                    self.reader  = reader
+                }
+                sync.decr(error)
+            }
+        }
+        else {
+            sync.fail(MedKitError.failed)
+        }
+
+        sync.close() { error in
+            if error == nil {
+                self.started()
+            }
+            else {
+                self.stopped(for: error)
+            }
         }
     }
     
     override public func stop()
     {
-        resource.removeObserver(self) { error in
-            self.delegate?.cameraController(self, didStopForReason: error)
+        if let reader = self.reader {
+            reader.stop() { error in
+                if error == nil {
+                    self.enabled = false
+                    self.reader  = nil
+                }
+                self.stopped(for: error)
+            }
         }
     }
 
     // MARK: - Private
+
+    private func instantiateReader() -> CameraReader?
+    {
+        return CameraReaderCache.shared.findReader(for: resource)
+    }
+
+    private func started()
+    {
+        if let delegate = self.delegate {
+            DispatchQueue.main.async {
+                delegate.cameraControllerDidStart(self)
+            }
+        }
+    }
     
     private func stopped(for reason: Error?)
     {
@@ -77,19 +111,6 @@ public class CameraController: ResourceController, ResourceObserver {
                 delegate.cameraController(self, didStopForReason: reason)
             }
         }
-    }
-
-    // MARK: - ResourceObserver
-
-    /**
-     Decode resource notifications.
-
-     - Parameters:
-        - resource:
-        - decoder:
-     */
-    public func resource(_ resource: Resource, didNotifyWith notification: AnyCodable)
-    {
     }
 
 }

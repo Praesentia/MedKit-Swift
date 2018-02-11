@@ -22,11 +22,14 @@
 import Foundation
 
 
-public class WaveformReader: ResourceObserver {
+/**
+ Waveform Reader
+ */
+class WaveformReader: ResourceObserver {
     
     // MARK: - Properties
-    public let resource : Resource
-    public let stream   = WaveformStream()
+    let resource : Resource
+    let stream   = WaveformStream(resolution: 250, units: UnitType()) // TODO
 
     // MARK: - Private
     private typealias WaveformProtocol = WaveformProtocolV1
@@ -34,12 +37,12 @@ public class WaveformReader: ResourceObserver {
 
     private var enabledCount: Int = 0
 
-    // MARK: - Initialiers
+    // MARK: - Initializers
     
     /**
      Initialize instance.
      */
-    public init(from resource: Resource)
+    init(from resource: Resource)
     {
         self.resource = resource
     }
@@ -53,13 +56,13 @@ public class WaveformReader: ResourceObserver {
     {
         //assert(count == 0)
         
-        WaveformStreamCache.main.removeReader(with: resource.identifier)
+        WaveformReaderCache.shared.removeReader(with: resource.identifier)
     }
     
     /**
      Start streaming waveform data.
      */
-    public func start(completionHandler completion: @escaping (Error?) -> Void)
+    func start(completionHandler completion: @escaping (Error?) -> Void)
     {
         let sync = Sync()
         
@@ -79,7 +82,7 @@ public class WaveformReader: ResourceObserver {
     /**
      Stop streaming waveform data.
      */
-    public func stop(completionHandler completion: @escaping (Error?) -> Void)
+    func stop(completionHandler completion: @escaping (Error?) -> Void)
     {
         let sync = Sync()
         
@@ -103,9 +106,9 @@ public class WaveformReader: ResourceObserver {
 
      - Parameters:
         - resource:
-        - decoder:
+        - notification:
      */
-    public func resource(_ resource: Resource, didNotifyWith notification: AnyCodable)
+    func resource(_ resource: Resource, didNotify notification: AnyCodable)
     {
         do {
             let container = try notification.decoder.container(keyedBy: Notification.CodingKeys.self)
@@ -113,13 +116,27 @@ public class WaveformReader: ResourceObserver {
 
             switch type {
             case .didUpdate :
-                let args = try container.decode(Notification.DidUpdate.Args.self, forKey: .args)
-                stream.append(data: args.samples, at: args.index)
+                try didUpdate(from: container)
             }
         }
         catch let error {
             print("WaveformReader decoding error \(error).")
         }
+    }
+
+    // MARK: - Private
+
+    /**
+     Update from container.
+
+     - Parameters:
+        - container:
+     */
+    private func didUpdate(from container: KeyedDecodingContainer<Notification.CodingKeys>) throws
+    {
+        let args = try container.decode(Notification.DidUpdate.Args.self, forKey: .args)
+
+        stream.append(segment: args)
     }
     
 }

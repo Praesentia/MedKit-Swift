@@ -23,45 +23,12 @@ import Foundation
 
 
 /**
- Resource Controller
+ Camera stream.
  */
-open class ResourceController {
-
-    // MARK: - Properties
-
-    /**
-     Enabled flag.
-     */
-    public internal(set) var enabled: Bool = false
-
-    /**
-     Resource reference.
-     */
-    public let resource: Resource
-
-    // MARK: - Initialiers
-
-    /**
-     Initialize instance.
-     */
-    public init(for resource: Resource)
-    {
-        self.resource = resource
-    }
-
-    // MARK: - Basic Controls
-
-    open func start()
-    {
-        fatalError()
-    }
-
-    open func stop()
-    {
-        fatalError()
-    }
+public class CameraStream: CameraSource {
 
 }
 
 
 // End of File
+
